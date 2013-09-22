@@ -22,7 +22,7 @@ namespace KevinKAssignment1
         {
             InitializeComponent();
         }
-        private void TotalMonthlySales_Leave
+        
         private void CalculateButton_Click(object sender, EventArgs e)
         {
 
@@ -71,6 +71,11 @@ namespace KevinKAssignment1
             CalculateButton.Text = "Calculer";
             PrintButton.Text = "Caractères";
             NextButton.Text = "Ensuite";
+        }
+
+        private void TotalMonthlySalesTextBox_Leave(object sender, EventArgs e)
+        {
+            TotalMonthlySalesTextBox.Text="text";
         }
     }
 }

@@ -233,6 +233,7 @@
             this.TotalMonthlySalesTextBox.Name = "TotalMonthlySalesTextBox";
             this.TotalMonthlySalesTextBox.Size = new System.Drawing.Size(121, 22);
             this.TotalMonthlySalesTextBox.TabIndex = 48;
+            this.TotalMonthlySalesTextBox.Leave += new System.EventHandler(this.TotalMonthlySalesTextBox_Leave);
             // 
             // Assignment1Form
             // 
