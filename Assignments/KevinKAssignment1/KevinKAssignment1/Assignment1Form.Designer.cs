@@ -1,5 +1,11 @@
 ﻿namespace KevinKAssignment1
 {
+    //Written By: Kevin Kan
+    //Student No. 200213257
+    //Version: Sept 22 2013
+    //This application calculates the bonus for employees based on total sales in the four
+    //week period and how much they worked in that four week period. (the can gain a max of 2% for working the max
+    //160 hours)
     partial class Assignment1Form
     {
         /// <summary>
@@ -30,12 +36,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Assignment1Form));
-            this.ErrorText = new System.Windows.Forms.TextBox();
             this.NextButton = new System.Windows.Forms.Button();
-            this.SalesBonusLable = new System.Windows.Forms.Label();
-            this.TotalHoursWorkedLable = new System.Windows.Forms.Label();
+            this.SalesBonusLabel = new System.Windows.Forms.Label();
+            this.TotalHoursWorkedLabel = new System.Windows.Forms.Label();
             this.EmployeeIdLabel = new System.Windows.Forms.Label();
-            this.EmployeeNameLable = new System.Windows.Forms.Label();
+            this.EmployeeNameLabel = new System.Windows.Forms.Label();
             this.MonthlyTotalSalesLabel = new System.Windows.Forms.Label();
             this.SalesBonusText = new System.Windows.Forms.TextBox();
             this.TotalHoursWorkedText = new System.Windows.Forms.TextBox();
@@ -49,18 +54,10 @@
             this.SelectEnglishButton = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.printForm1 = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
+            this.ErrorLable = new System.Windows.Forms.Label();
             this.SelectLanguageGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ErrorText
-            // 
-            this.ErrorText.Location = new System.Drawing.Point(234, 205);
-            this.ErrorText.Name = "ErrorText";
-            this.ErrorText.ReadOnly = true;
-            this.ErrorText.Size = new System.Drawing.Size(192, 22);
-            this.ErrorText.TabIndex = 47;
-            this.ErrorText.Visible = false;
             // 
             // NextButton
             // 
@@ -72,23 +69,23 @@
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
-            // SalesBonusLable
+            // SalesBonusLabel
             // 
-            this.SalesBonusLable.AutoSize = true;
-            this.SalesBonusLable.Location = new System.Drawing.Point(218, 167);
-            this.SalesBonusLable.Name = "SalesBonusLable";
-            this.SalesBonusLable.Size = new System.Drawing.Size(87, 17);
-            this.SalesBonusLable.TabIndex = 45;
-            this.SalesBonusLable.Text = "Sales Bonus";
+            this.SalesBonusLabel.AutoSize = true;
+            this.SalesBonusLabel.Location = new System.Drawing.Point(218, 167);
+            this.SalesBonusLabel.Name = "SalesBonusLabel";
+            this.SalesBonusLabel.Size = new System.Drawing.Size(87, 17);
+            this.SalesBonusLabel.TabIndex = 45;
+            this.SalesBonusLabel.Text = "Sales Bonus";
             // 
-            // TotalHoursWorkedLable
+            // TotalHoursWorkedLabel
             // 
-            this.TotalHoursWorkedLable.AutoSize = true;
-            this.TotalHoursWorkedLable.Location = new System.Drawing.Point(218, 139);
-            this.TotalHoursWorkedLable.Name = "TotalHoursWorkedLable";
-            this.TotalHoursWorkedLable.Size = new System.Drawing.Size(135, 17);
-            this.TotalHoursWorkedLable.TabIndex = 44;
-            this.TotalHoursWorkedLable.Text = "Total Hours Worked";
+            this.TotalHoursWorkedLabel.AutoSize = true;
+            this.TotalHoursWorkedLabel.Location = new System.Drawing.Point(218, 139);
+            this.TotalHoursWorkedLabel.Name = "TotalHoursWorkedLabel";
+            this.TotalHoursWorkedLabel.Size = new System.Drawing.Size(135, 17);
+            this.TotalHoursWorkedLabel.TabIndex = 44;
+            this.TotalHoursWorkedLabel.Text = "Total Hours Worked";
             // 
             // EmployeeIdLabel
             // 
@@ -99,14 +96,14 @@
             this.EmployeeIdLabel.TabIndex = 43;
             this.EmployeeIdLabel.Text = "Employee Id";
             // 
-            // EmployeeNameLable
+            // EmployeeNameLabel
             // 
-            this.EmployeeNameLable.AutoSize = true;
-            this.EmployeeNameLable.Location = new System.Drawing.Point(218, 83);
-            this.EmployeeNameLable.Name = "EmployeeNameLable";
-            this.EmployeeNameLable.Size = new System.Drawing.Size(111, 17);
-            this.EmployeeNameLable.TabIndex = 42;
-            this.EmployeeNameLable.Text = "Employee Name";
+            this.EmployeeNameLabel.AutoSize = true;
+            this.EmployeeNameLabel.Location = new System.Drawing.Point(218, 83);
+            this.EmployeeNameLabel.Name = "EmployeeNameLabel";
+            this.EmployeeNameLabel.Size = new System.Drawing.Size(111, 17);
+            this.EmployeeNameLabel.TabIndex = 42;
+            this.EmployeeNameLabel.Text = "Employee Name";
             // 
             // MonthlyTotalSalesLabel
             // 
@@ -119,7 +116,7 @@
             // 
             // SalesBonusText
             // 
-            this.SalesBonusText.Location = new System.Drawing.Point(356, 167);
+            this.SalesBonusText.Location = new System.Drawing.Point(462, 170);
             this.SalesBonusText.Name = "SalesBonusText";
             this.SalesBonusText.ReadOnly = true;
             this.SalesBonusText.Size = new System.Drawing.Size(121, 22);
@@ -127,28 +124,28 @@
             // 
             // TotalHoursWorkedText
             // 
-            this.TotalHoursWorkedText.Location = new System.Drawing.Point(356, 139);
+            this.TotalHoursWorkedText.Location = new System.Drawing.Point(462, 142);
             this.TotalHoursWorkedText.Name = "TotalHoursWorkedText";
             this.TotalHoursWorkedText.Size = new System.Drawing.Size(121, 22);
             this.TotalHoursWorkedText.TabIndex = 39;
             // 
             // EmployeeIdText
             // 
-            this.EmployeeIdText.Location = new System.Drawing.Point(356, 111);
+            this.EmployeeIdText.Location = new System.Drawing.Point(462, 114);
             this.EmployeeIdText.Name = "EmployeeIdText";
             this.EmployeeIdText.Size = new System.Drawing.Size(121, 22);
             this.EmployeeIdText.TabIndex = 38;
             // 
             // EmployeeNameText
             // 
-            this.EmployeeNameText.Location = new System.Drawing.Point(356, 83);
+            this.EmployeeNameText.Location = new System.Drawing.Point(462, 86);
             this.EmployeeNameText.Name = "EmployeeNameText";
             this.EmployeeNameText.Size = new System.Drawing.Size(121, 22);
             this.EmployeeNameText.TabIndex = 37;
             // 
             // TotalMonthlySalesText
             // 
-            this.TotalMonthlySalesText.Location = new System.Drawing.Point(356, 55);
+            this.TotalMonthlySalesText.Location = new System.Drawing.Point(462, 58);
             this.TotalMonthlySalesText.Name = "TotalMonthlySalesText";
             this.TotalMonthlySalesText.Size = new System.Drawing.Size(121, 22);
             this.TotalMonthlySalesText.TabIndex = 36;
@@ -227,17 +224,25 @@
             this.printForm1.PrinterSettings = ((System.Drawing.Printing.PrinterSettings)(resources.GetObject("printForm1.PrinterSettings")));
             this.printForm1.PrintFileName = null;
             // 
+            // ErrorLable
+            // 
+            this.ErrorLable.AutoSize = true;
+            this.ErrorLable.Location = new System.Drawing.Point(233, 210);
+            this.ErrorLable.Name = "ErrorLable";
+            this.ErrorLable.Size = new System.Drawing.Size(0, 17);
+            this.ErrorLable.TabIndex = 47;
+            // 
             // Assignment1Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 334);
-            this.Controls.Add(this.ErrorText);
+            this.ClientSize = new System.Drawing.Size(634, 334);
+            this.Controls.Add(this.ErrorLable);
             this.Controls.Add(this.NextButton);
-            this.Controls.Add(this.SalesBonusLable);
-            this.Controls.Add(this.TotalHoursWorkedLable);
+            this.Controls.Add(this.SalesBonusLabel);
+            this.Controls.Add(this.TotalHoursWorkedLabel);
             this.Controls.Add(this.EmployeeIdLabel);
-            this.Controls.Add(this.EmployeeNameLable);
+            this.Controls.Add(this.EmployeeNameLabel);
             this.Controls.Add(this.MonthlyTotalSalesLabel);
             this.Controls.Add(this.SalesBonusText);
             this.Controls.Add(this.TotalHoursWorkedText);
@@ -261,12 +266,11 @@
 
         #endregion
 
-        internal System.Windows.Forms.TextBox ErrorText;
         private System.Windows.Forms.Button NextButton;
-        private System.Windows.Forms.Label SalesBonusLable;
-        private System.Windows.Forms.Label TotalHoursWorkedLable;
+        private System.Windows.Forms.Label SalesBonusLabel;
+        private System.Windows.Forms.Label TotalHoursWorkedLabel;
         private System.Windows.Forms.Label EmployeeIdLabel;
-        private System.Windows.Forms.Label EmployeeNameLable;
+        private System.Windows.Forms.Label EmployeeNameLabel;
         private System.Windows.Forms.Label MonthlyTotalSalesLabel;
         private System.Windows.Forms.TextBox SalesBonusText;
         private System.Windows.Forms.TextBox TotalHoursWorkedText;
@@ -280,6 +284,7 @@
         private System.Windows.Forms.RadioButton SelectEnglishButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Microsoft.VisualBasic.PowerPacks.Printing.PrintForm printForm1;
+        private System.Windows.Forms.Label ErrorLable;
     }
 }
 
