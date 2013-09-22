@@ -22,7 +22,7 @@ namespace KevinKAssignment1
         {
             InitializeComponent();
         }
-
+        private void TotalMonthlySales_Leave
         private void CalculateButton_Click(object sender, EventArgs e)
         {
 
@@ -39,10 +39,10 @@ namespace KevinKAssignment1
         private void NextButton_Click(object sender, EventArgs e)
         {
             //Reset the calculation for the next employee
-            EmployeeNameText.Text = "";
-            EmployeeIdText.Text = "";
-            TotalHoursWorkedText.Text = "";
-            SalesBonusText.Text = "";
+            EmployeeNameTextBox.Text = "";
+            EmployeeIdTextBox.Text = "";
+            TotalHoursWorkedTextBox.Text = "";
+            SalesBonusTextBox.Text = "";
         }
 
         private void SelectEnglishButton_CheckedChanged(object sender, EventArgs e)

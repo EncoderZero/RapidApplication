@@ -42,11 +42,10 @@
             this.EmployeeIdLabel = new System.Windows.Forms.Label();
             this.EmployeeNameLabel = new System.Windows.Forms.Label();
             this.MonthlyTotalSalesLabel = new System.Windows.Forms.Label();
-            this.SalesBonusText = new System.Windows.Forms.TextBox();
-            this.TotalHoursWorkedText = new System.Windows.Forms.TextBox();
-            this.EmployeeIdText = new System.Windows.Forms.TextBox();
-            this.EmployeeNameText = new System.Windows.Forms.TextBox();
-            this.TotalMonthlySalesText = new System.Windows.Forms.TextBox();
+            this.SalesBonusTextBox = new System.Windows.Forms.TextBox();
+            this.TotalHoursWorkedTextBox = new System.Windows.Forms.TextBox();
+            this.EmployeeIdTextBox = new System.Windows.Forms.TextBox();
+            this.EmployeeNameTextBox = new System.Windows.Forms.TextBox();
             this.PrintButton = new System.Windows.Forms.Button();
             this.CalculateButton = new System.Windows.Forms.Button();
             this.SelectLanguageGroupBox = new System.Windows.Forms.GroupBox();
@@ -55,6 +54,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.printForm1 = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
             this.ErrorLable = new System.Windows.Forms.Label();
+            this.TotalMonthlySalesTextBox = new System.Windows.Forms.TextBox();
             this.SelectLanguageGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -114,41 +114,34 @@
             this.MonthlyTotalSalesLabel.TabIndex = 41;
             this.MonthlyTotalSalesLabel.Text = "Total Monthly Sales";
             // 
-            // SalesBonusText
+            // SalesBonusTextBox
             // 
-            this.SalesBonusText.Location = new System.Drawing.Point(462, 170);
-            this.SalesBonusText.Name = "SalesBonusText";
-            this.SalesBonusText.ReadOnly = true;
-            this.SalesBonusText.Size = new System.Drawing.Size(121, 22);
-            this.SalesBonusText.TabIndex = 40;
+            this.SalesBonusTextBox.Location = new System.Drawing.Point(462, 170);
+            this.SalesBonusTextBox.Name = "SalesBonusTextBox";
+            this.SalesBonusTextBox.ReadOnly = true;
+            this.SalesBonusTextBox.Size = new System.Drawing.Size(121, 22);
+            this.SalesBonusTextBox.TabIndex = 40;
             // 
-            // TotalHoursWorkedText
+            // TotalHoursWorkedTextBox
             // 
-            this.TotalHoursWorkedText.Location = new System.Drawing.Point(462, 142);
-            this.TotalHoursWorkedText.Name = "TotalHoursWorkedText";
-            this.TotalHoursWorkedText.Size = new System.Drawing.Size(121, 22);
-            this.TotalHoursWorkedText.TabIndex = 39;
+            this.TotalHoursWorkedTextBox.Location = new System.Drawing.Point(462, 142);
+            this.TotalHoursWorkedTextBox.Name = "TotalHoursWorkedTextBox";
+            this.TotalHoursWorkedTextBox.Size = new System.Drawing.Size(121, 22);
+            this.TotalHoursWorkedTextBox.TabIndex = 39;
             // 
-            // EmployeeIdText
+            // EmployeeIdTextBox
             // 
-            this.EmployeeIdText.Location = new System.Drawing.Point(462, 114);
-            this.EmployeeIdText.Name = "EmployeeIdText";
-            this.EmployeeIdText.Size = new System.Drawing.Size(121, 22);
-            this.EmployeeIdText.TabIndex = 38;
+            this.EmployeeIdTextBox.Location = new System.Drawing.Point(462, 114);
+            this.EmployeeIdTextBox.Name = "EmployeeIdTextBox";
+            this.EmployeeIdTextBox.Size = new System.Drawing.Size(121, 22);
+            this.EmployeeIdTextBox.TabIndex = 38;
             // 
-            // EmployeeNameText
+            // EmployeeNameTextBox
             // 
-            this.EmployeeNameText.Location = new System.Drawing.Point(462, 86);
-            this.EmployeeNameText.Name = "EmployeeNameText";
-            this.EmployeeNameText.Size = new System.Drawing.Size(121, 22);
-            this.EmployeeNameText.TabIndex = 37;
-            // 
-            // TotalMonthlySalesText
-            // 
-            this.TotalMonthlySalesText.Location = new System.Drawing.Point(462, 58);
-            this.TotalMonthlySalesText.Name = "TotalMonthlySalesText";
-            this.TotalMonthlySalesText.Size = new System.Drawing.Size(121, 22);
-            this.TotalMonthlySalesText.TabIndex = 36;
+            this.EmployeeNameTextBox.Location = new System.Drawing.Point(462, 86);
+            this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
+            this.EmployeeNameTextBox.Size = new System.Drawing.Size(121, 22);
+            this.EmployeeNameTextBox.TabIndex = 37;
             // 
             // PrintButton
             // 
@@ -208,7 +201,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::KevinKAssignment1.Properties.Resources.Yin_Yang_Symbol;
+            this.pictureBox1.BackgroundImage = global::KevinKAssignment1.Properties.Resources.Yin_Yang_Symbol;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -232,11 +227,19 @@
             this.ErrorLable.Size = new System.Drawing.Size(0, 17);
             this.ErrorLable.TabIndex = 47;
             // 
+            // TotalMonthlySalesTextBox
+            // 
+            this.TotalMonthlySalesTextBox.Location = new System.Drawing.Point(462, 58);
+            this.TotalMonthlySalesTextBox.Name = "TotalMonthlySalesTextBox";
+            this.TotalMonthlySalesTextBox.Size = new System.Drawing.Size(121, 22);
+            this.TotalMonthlySalesTextBox.TabIndex = 48;
+            // 
             // Assignment1Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 334);
+            this.Controls.Add(this.TotalMonthlySalesTextBox);
             this.Controls.Add(this.ErrorLable);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.SalesBonusLabel);
@@ -244,11 +247,10 @@
             this.Controls.Add(this.EmployeeIdLabel);
             this.Controls.Add(this.EmployeeNameLabel);
             this.Controls.Add(this.MonthlyTotalSalesLabel);
-            this.Controls.Add(this.SalesBonusText);
-            this.Controls.Add(this.TotalHoursWorkedText);
-            this.Controls.Add(this.EmployeeIdText);
-            this.Controls.Add(this.EmployeeNameText);
-            this.Controls.Add(this.TotalMonthlySalesText);
+            this.Controls.Add(this.SalesBonusTextBox);
+            this.Controls.Add(this.TotalHoursWorkedTextBox);
+            this.Controls.Add(this.EmployeeIdTextBox);
+            this.Controls.Add(this.EmployeeNameTextBox);
             this.Controls.Add(this.PrintButton);
             this.Controls.Add(this.CalculateButton);
             this.Controls.Add(this.SelectLanguageGroupBox);
@@ -272,11 +274,10 @@
         private System.Windows.Forms.Label EmployeeIdLabel;
         private System.Windows.Forms.Label EmployeeNameLabel;
         private System.Windows.Forms.Label MonthlyTotalSalesLabel;
-        private System.Windows.Forms.TextBox SalesBonusText;
-        private System.Windows.Forms.TextBox TotalHoursWorkedText;
-        private System.Windows.Forms.TextBox EmployeeIdText;
-        private System.Windows.Forms.TextBox EmployeeNameText;
-        private System.Windows.Forms.TextBox TotalMonthlySalesText;
+        private System.Windows.Forms.TextBox SalesBonusTextBox;
+        private System.Windows.Forms.TextBox TotalHoursWorkedTextBox;
+        private System.Windows.Forms.TextBox EmployeeIdTextBox;
+        private System.Windows.Forms.TextBox EmployeeNameTextBox;
         private System.Windows.Forms.Button PrintButton;
         private System.Windows.Forms.Button CalculateButton;
         private System.Windows.Forms.GroupBox SelectLanguageGroupBox;
@@ -285,6 +286,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Microsoft.VisualBasic.PowerPacks.Printing.PrintForm printForm1;
         private System.Windows.Forms.Label ErrorLable;
+        private System.Windows.Forms.TextBox TotalMonthlySalesTextBox;
     }
 }
 
