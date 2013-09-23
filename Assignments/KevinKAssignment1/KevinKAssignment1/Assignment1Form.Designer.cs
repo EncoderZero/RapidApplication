@@ -51,12 +51,12 @@
             this.SelectLanguageGroupBox = new System.Windows.Forms.GroupBox();
             this.SelectFrancaisButton = new System.Windows.Forms.RadioButton();
             this.SelectEnglishButton = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LogoPictureBox = new System.Windows.Forms.PictureBox();
             this.printForm1 = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
-            this.ErrorLable = new System.Windows.Forms.Label();
             this.TotalMonthlySalesTextBox = new System.Windows.Forms.TextBox();
+            this.ErrorMessageLabel = new System.Windows.Forms.Label();
             this.SelectLanguageGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // NextButton
@@ -119,28 +119,29 @@
             this.SalesBonusTextBox.Location = new System.Drawing.Point(462, 170);
             this.SalesBonusTextBox.Name = "SalesBonusTextBox";
             this.SalesBonusTextBox.ReadOnly = true;
-            this.SalesBonusTextBox.Size = new System.Drawing.Size(121, 22);
+            this.SalesBonusTextBox.Size = new System.Drawing.Size(236, 22);
             this.SalesBonusTextBox.TabIndex = 40;
             // 
             // TotalHoursWorkedTextBox
             // 
             this.TotalHoursWorkedTextBox.Location = new System.Drawing.Point(462, 142);
             this.TotalHoursWorkedTextBox.Name = "TotalHoursWorkedTextBox";
-            this.TotalHoursWorkedTextBox.Size = new System.Drawing.Size(121, 22);
+            this.TotalHoursWorkedTextBox.Size = new System.Drawing.Size(236, 22);
             this.TotalHoursWorkedTextBox.TabIndex = 39;
+            this.TotalHoursWorkedTextBox.Leave += new System.EventHandler(this.TotalHoursWorkedTextBox_Leave);
             // 
             // EmployeeIdTextBox
             // 
             this.EmployeeIdTextBox.Location = new System.Drawing.Point(462, 114);
             this.EmployeeIdTextBox.Name = "EmployeeIdTextBox";
-            this.EmployeeIdTextBox.Size = new System.Drawing.Size(121, 22);
+            this.EmployeeIdTextBox.Size = new System.Drawing.Size(236, 22);
             this.EmployeeIdTextBox.TabIndex = 38;
             // 
             // EmployeeNameTextBox
             // 
             this.EmployeeNameTextBox.Location = new System.Drawing.Point(462, 86);
             this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
-            this.EmployeeNameTextBox.Size = new System.Drawing.Size(121, 22);
+            this.EmployeeNameTextBox.Size = new System.Drawing.Size(236, 22);
             this.EmployeeNameTextBox.TabIndex = 37;
             // 
             // PrintButton
@@ -199,17 +200,17 @@
             this.SelectEnglishButton.UseVisualStyleBackColor = true;
             this.SelectEnglishButton.CheckedChanged += new System.EventHandler(this.SelectEnglishButton_CheckedChanged);
             // 
-            // pictureBox1
+            // LogoPictureBox
             // 
-            this.pictureBox1.BackgroundImage = global::KevinKAssignment1.Properties.Resources.Yin_Yang_Symbol;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(191, 190);
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
+            this.LogoPictureBox.BackgroundImage = global::KevinKAssignment1.Properties.Resources.Yin_Yang_Symbol;
+            this.LogoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogoPictureBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LogoPictureBox.InitialImage = null;
+            this.LogoPictureBox.Location = new System.Drawing.Point(12, 12);
+            this.LogoPictureBox.Name = "LogoPictureBox";
+            this.LogoPictureBox.Size = new System.Drawing.Size(191, 190);
+            this.LogoPictureBox.TabIndex = 32;
+            this.LogoPictureBox.TabStop = false;
             // 
             // printForm1
             // 
@@ -219,29 +220,31 @@
             this.printForm1.PrinterSettings = ((System.Drawing.Printing.PrinterSettings)(resources.GetObject("printForm1.PrinterSettings")));
             this.printForm1.PrintFileName = null;
             // 
-            // ErrorLable
-            // 
-            this.ErrorLable.AutoSize = true;
-            this.ErrorLable.Location = new System.Drawing.Point(233, 210);
-            this.ErrorLable.Name = "ErrorLable";
-            this.ErrorLable.Size = new System.Drawing.Size(0, 17);
-            this.ErrorLable.TabIndex = 47;
-            // 
             // TotalMonthlySalesTextBox
             // 
             this.TotalMonthlySalesTextBox.Location = new System.Drawing.Point(462, 58);
             this.TotalMonthlySalesTextBox.Name = "TotalMonthlySalesTextBox";
-            this.TotalMonthlySalesTextBox.Size = new System.Drawing.Size(121, 22);
+            this.TotalMonthlySalesTextBox.Size = new System.Drawing.Size(236, 22);
             this.TotalMonthlySalesTextBox.TabIndex = 48;
             this.TotalMonthlySalesTextBox.Leave += new System.EventHandler(this.TotalMonthlySalesTextBox_Leave);
+            // 
+            // ErrorMessageLabel
+            // 
+            this.ErrorMessageLabel.AutoSize = true;
+            this.ErrorMessageLabel.ForeColor = System.Drawing.Color.Red;
+            this.ErrorMessageLabel.Location = new System.Drawing.Point(213, 210);
+            this.ErrorMessageLabel.MaximumSize = new System.Drawing.Size(500, 500);
+            this.ErrorMessageLabel.Name = "ErrorMessageLabel";
+            this.ErrorMessageLabel.Size = new System.Drawing.Size(0, 17);
+            this.ErrorMessageLabel.TabIndex = 49;
             // 
             // Assignment1Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 334);
+            this.ClientSize = new System.Drawing.Size(710, 307);
+            this.Controls.Add(this.ErrorMessageLabel);
             this.Controls.Add(this.TotalMonthlySalesTextBox);
-            this.Controls.Add(this.ErrorLable);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.SalesBonusLabel);
             this.Controls.Add(this.TotalHoursWorkedLabel);
@@ -255,13 +258,13 @@
             this.Controls.Add(this.PrintButton);
             this.Controls.Add(this.CalculateButton);
             this.Controls.Add(this.SelectLanguageGroupBox);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.LogoPictureBox);
             this.Name = "Assignment1Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C Sharp Mail Order Assignment1";
             this.SelectLanguageGroupBox.ResumeLayout(false);
             this.SelectLanguageGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,10 +287,10 @@
         private System.Windows.Forms.GroupBox SelectLanguageGroupBox;
         private System.Windows.Forms.RadioButton SelectFrancaisButton;
         private System.Windows.Forms.RadioButton SelectEnglishButton;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox LogoPictureBox;
         private Microsoft.VisualBasic.PowerPacks.Printing.PrintForm printForm1;
-        private System.Windows.Forms.Label ErrorLable;
         private System.Windows.Forms.TextBox TotalMonthlySalesTextBox;
+        private System.Windows.Forms.Label ErrorMessageLabel;
     }
 }
 
