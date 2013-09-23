@@ -34,30 +34,31 @@ namespace KevinKAssignment1
             //declare constants
             const decimal BONUS_RATE_Decimal = 0.02m;
             const int MAX_TOTAL_HOURS_WORKED_Int = 160;
-            if (Decimal.TryParse(TotalMonthlySalesTextBox.Text, System.Globalization.NumberStyles.Currency, null, out TotalMonthlySalesValueDecimal))
-            {//if TotalMonthlySalesTextBox is Decimal with Curency allowence
-                if (Decimal.TryParse(TotalHoursWorkedTextBox.Text, out TotalHoursWorkedValueDecimal))
-                {//if TryParse TotalHoursWorkedTextBox.Text is double
+            if (Decimal.TryParse(TotalMonthlySalesTextBox.Text, System.Globalization.NumberStyles.Currency, null, out TotalMonthlySalesValueDecimal)&&(Decimal.TryParse(TotalHoursWorkedTextBox.Text, out TotalHoursWorkedValueDecimal)))
+            {//if TotalMonthlySalesTextBox is Decimal with Curency allowence && TryParse TotalHoursWorkedTextBox.Text is decimal
                     EmployeeBonusDecimal = TotalMonthlySalesValueDecimal * BONUS_RATE_Decimal * TotalHoursWorkedValueDecimal / MAX_TOTAL_HOURS_WORKED_Int;
                     EmployeeBonusDecimal = Math.Round(EmployeeBonusDecimal, 2);
                     SalesBonusTextBox.Text = EmployeeBonusDecimal.ToString("C");
-                }//End of if TryParse TotalHoursWorkedTextBox.Text is double
-                else {
+             }//End of if TotalMonthlySalesTextBox is Decimal with Curency allowence && TryParse TotalHoursWorkedTextBox.Text is decimal
+             else {
+                 ErrorMessageLabel.Text += "";
+                if(!Decimal.TryParse(TotalMonthlySalesTextBox.Text, System.Globalization.NumberStyles.Currency, null, out TotalMonthlySalesValueDecimal)){
+                    if (!TotalMonthlySalesErrorBool)
+                    {
+                        TotalMonthlySalesErrorBool = true;
+                        ErrorMessageLabel.Text += "Warning: Total Monthly Sales must be in curency and not empty.\n";
+                    }//end of if !TotalMonthlySalesErrorBool
+                }
+                if (!Decimal.TryParse(TotalHoursWorkedTextBox.Text, out TotalHoursWorkedValueDecimal))
+                {
                     if (!TotalHoursWorkedErrorBool)
                     {
                         TotalHoursWorkedErrorBool = true;
                         ErrorMessageLabel.Text += "Warning: Total Hours Worked must be in decimal format and not empty.\n";
                     }//!TotalHoursWorkedErrorBool
                 }
-            }//End of if TotalMonthlySalesTextBox is Decimal with Curency allowence
-            else {
-                if (!TotalMonthlySalesErrorBool)
-                {
-                    TotalMonthlySalesErrorBool = true;
-                    ErrorMessageLabel.Text += "Warning: Total Monthly Sales must be in curency and not empty.\n";
-                }//end of if !TotalMonthlySalesErrorBool
-            }
-        }
+            }//end of else
+        }//end of CalculateButton_Click
 
         private void PrintButton_Click(object sender, EventArgs e)
         {

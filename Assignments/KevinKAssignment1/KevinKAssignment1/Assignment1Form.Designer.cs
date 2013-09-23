@@ -61,7 +61,7 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(383, 277);
+            this.NextButton.Location = new System.Drawing.Point(624, 266);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(75, 23);
             this.NextButton.TabIndex = 46;
@@ -146,7 +146,7 @@
             // 
             // PrintButton
             // 
-            this.PrintButton.Location = new System.Drawing.Point(302, 277);
+            this.PrintButton.Location = new System.Drawing.Point(543, 266);
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(75, 23);
             this.PrintButton.TabIndex = 35;
@@ -156,12 +156,12 @@
             // 
             // CalculateButton
             // 
-            this.CalculateButton.Location = new System.Drawing.Point(221, 277);
+            this.CalculateButton.Location = new System.Drawing.Point(462, 266);
             this.CalculateButton.Name = "CalculateButton";
             this.CalculateButton.Size = new System.Drawing.Size(75, 23);
             this.CalculateButton.TabIndex = 34;
             this.CalculateButton.TabStop = false;
-            this.CalculateButton.Text = "Calculate";
+            this.CalculateButton.Text = "&Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
             this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
