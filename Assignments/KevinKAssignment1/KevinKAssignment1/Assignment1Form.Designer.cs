@@ -63,9 +63,9 @@
             // 
             this.NextButton.Location = new System.Drawing.Point(624, 266);
             this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(75, 23);
+            this.NextButton.Size = new System.Drawing.Size(75, 29);
             this.NextButton.TabIndex = 46;
-            this.NextButton.Text = "Next";
+            this.NextButton.Text = "Ne&xt";
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
@@ -116,10 +116,12 @@
             // 
             // SalesBonusTextBox
             // 
+            this.SalesBonusTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SalesBonusTextBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.SalesBonusTextBox.Location = new System.Drawing.Point(462, 170);
             this.SalesBonusTextBox.Name = "SalesBonusTextBox";
             this.SalesBonusTextBox.ReadOnly = true;
-            this.SalesBonusTextBox.Size = new System.Drawing.Size(236, 22);
+            this.SalesBonusTextBox.Size = new System.Drawing.Size(236, 15);
             this.SalesBonusTextBox.TabIndex = 40;
             // 
             // TotalHoursWorkedTextBox
@@ -148,9 +150,9 @@
             // 
             this.PrintButton.Location = new System.Drawing.Point(543, 266);
             this.PrintButton.Name = "PrintButton";
-            this.PrintButton.Size = new System.Drawing.Size(75, 23);
+            this.PrintButton.Size = new System.Drawing.Size(75, 29);
             this.PrintButton.TabIndex = 35;
-            this.PrintButton.Text = "Print";
+            this.PrintButton.Text = "&Print";
             this.PrintButton.UseVisualStyleBackColor = true;
             this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
@@ -158,7 +160,7 @@
             // 
             this.CalculateButton.Location = new System.Drawing.Point(462, 266);
             this.CalculateButton.Name = "CalculateButton";
-            this.CalculateButton.Size = new System.Drawing.Size(75, 23);
+            this.CalculateButton.Size = new System.Drawing.Size(75, 29);
             this.CalculateButton.TabIndex = 34;
             this.CalculateButton.TabStop = false;
             this.CalculateButton.Text = "&Calculate";

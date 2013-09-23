@@ -100,9 +100,9 @@ namespace KevinKAssignment1
             EmployeeIdLabel.Text = "Employé Id";
             TotalHoursWorkedLabel.Text = "Les Heures Totales Ont Travaillé";
             SalesBonusLabel.Text = "Prime Des Ventes";
-            CalculateButton.Text = "Calculer";
-            PrintButton.Text = "Caractères";
-            NextButton.Text = "Ensuite";
+            CalculateButton.Text = "&Calculer";
+            PrintButton.Text = "Carac&tères";
+            NextButton.Text = "&Ensuite";
         }
 
         private void TotalMonthlySalesTextBox_Leave(object sender, EventArgs e)
