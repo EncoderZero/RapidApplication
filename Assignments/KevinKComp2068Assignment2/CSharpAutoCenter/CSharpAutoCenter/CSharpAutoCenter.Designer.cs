@@ -182,6 +182,7 @@
             this.BasePriceTextBox.Name = "BasePriceTextBox";
             this.BasePriceTextBox.Size = new System.Drawing.Size(231, 30);
             this.BasePriceTextBox.TabIndex = 1;
+            this.BasePriceTextBox.Text = "0";
             // 
             // BasePriceLabel
             // 
@@ -210,6 +211,7 @@
             this.TradeInValueTextBox.Name = "TradeInValueTextBox";
             this.TradeInValueTextBox.Size = new System.Drawing.Size(231, 30);
             this.TradeInValueTextBox.TabIndex = 3;
+            this.TradeInValueTextBox.Text = "0";
             // 
             // AdditionalItemsLabel
             // 

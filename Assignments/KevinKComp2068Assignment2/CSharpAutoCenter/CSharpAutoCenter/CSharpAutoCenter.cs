@@ -45,15 +45,15 @@ namespace CSharpAutoCenter
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {//Show Message box that displays information on the form
-            MessageBox.Show("This application calculates the car new purchase value with several additional accessories and allows for trade in discount",
+            MessageBox.Show("This application calculates the car new purchase value with several additional accessories, an external finish and factors in the trade in value discount. This application has the use of menus and buttons.",
                 "About the Application", MessageBoxButtons.OK,
                                  MessageBoxIcon.Information);
         }
 
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {//reset the form to cleared values
-            BasePriceTextBox.Text = "";
-            TradeInValueTextBox.Text = "";
+            BasePriceTextBox.Text = "0";
+            TradeInValueTextBox.Text = "0";
             AdditionalItemsTextBox.Text = "";
             SubTotalTextBox.Text="";
             TaxTextBox.Text = "";
