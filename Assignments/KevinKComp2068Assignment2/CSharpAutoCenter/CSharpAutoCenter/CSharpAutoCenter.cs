@@ -7,7 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*Author: Kevin Kan
+ * Student Number: 200213257
+ * Date: Oct. 3, 2013
+ * Purpose: This application calculates the car new purchase value with several additional accessories, an external finish and
+ * factors in the trade in value discount. This application has the use of menus and buttons.
+ */
 namespace CSharpAutoCenter
 {
     public partial class CSharpAutoCenterForm : Form

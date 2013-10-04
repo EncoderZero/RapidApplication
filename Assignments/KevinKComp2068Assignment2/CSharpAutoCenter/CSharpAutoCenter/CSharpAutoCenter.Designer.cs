@@ -2,6 +2,12 @@
 {
     partial class CSharpAutoCenterForm
     {
+         /*Author: Kevin Kan
+         * Student Number: 200213257
+         * Date: Oct. 3, 2013
+         * Purpose: This application calculates the car new purchase value with several additional accessories, an external finish and
+         * factors in the trade in value discount. This application has the use of menus and buttons.
+         */
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -303,9 +309,10 @@
             // CarNameLabel
             // 
             this.CarNameLabel.AutoSize = true;
-            this.CarNameLabel.Location = new System.Drawing.Point(205, 30);
+            this.CarNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CarNameLabel.Location = new System.Drawing.Point(350, 30);
             this.CarNameLabel.Name = "CarNameLabel";
-            this.CarNameLabel.Size = new System.Drawing.Size(202, 25);
+            this.CarNameLabel.Size = new System.Drawing.Size(259, 29);
             this.CarNameLabel.TabIndex = 15;
             this.CarNameLabel.Text = "Honda Odyssey 2013";
             // 
@@ -345,9 +352,9 @@
             this.AdditionalOptionsGroupBox.Controls.Add(this.FogLightCheckBox);
             this.AdditionalOptionsGroupBox.Controls.Add(this.DoorSillCheckBox);
             this.AdditionalOptionsGroupBox.Controls.Add(this.TrailerHitchCheckBox);
-            this.AdditionalOptionsGroupBox.Location = new System.Drawing.Point(461, 24);
+            this.AdditionalOptionsGroupBox.Location = new System.Drawing.Point(461, 62);
             this.AdditionalOptionsGroupBox.Name = "AdditionalOptionsGroupBox";
-            this.AdditionalOptionsGroupBox.Size = new System.Drawing.Size(337, 162);
+            this.AdditionalOptionsGroupBox.Size = new System.Drawing.Size(337, 143);
             this.AdditionalOptionsGroupBox.TabIndex = 20;
             this.AdditionalOptionsGroupBox.TabStop = false;
             this.AdditionalOptionsGroupBox.Text = "Additional Options";
@@ -355,7 +362,7 @@
             // BackupSensorCheckBox
             // 
             this.BackupSensorCheckBox.AutoSize = true;
-            this.BackupSensorCheckBox.Location = new System.Drawing.Point(6, 127);
+            this.BackupSensorCheckBox.Location = new System.Drawing.Point(7, 107);
             this.BackupSensorCheckBox.Name = "BackupSensorCheckBox";
             this.BackupSensorCheckBox.Size = new System.Drawing.Size(256, 29);
             this.BackupSensorCheckBox.TabIndex = 3;
@@ -365,7 +372,7 @@
             // FogLightCheckBox
             // 
             this.FogLightCheckBox.AutoSize = true;
-            this.FogLightCheckBox.Location = new System.Drawing.Point(6, 98);
+            this.FogLightCheckBox.Location = new System.Drawing.Point(7, 81);
             this.FogLightCheckBox.Name = "FogLightCheckBox";
             this.FogLightCheckBox.Size = new System.Drawing.Size(213, 29);
             this.FogLightCheckBox.TabIndex = 2;
@@ -375,7 +382,7 @@
             // DoorSillCheckBox
             // 
             this.DoorSillCheckBox.AutoSize = true;
-            this.DoorSillCheckBox.Location = new System.Drawing.Point(6, 63);
+            this.DoorSillCheckBox.Location = new System.Drawing.Point(7, 55);
             this.DoorSillCheckBox.Name = "DoorSillCheckBox";
             this.DoorSillCheckBox.Size = new System.Drawing.Size(268, 29);
             this.DoorSillCheckBox.TabIndex = 1;
@@ -385,7 +392,7 @@
             // TrailerHitchCheckBox
             // 
             this.TrailerHitchCheckBox.AutoSize = true;
-            this.TrailerHitchCheckBox.Location = new System.Drawing.Point(6, 29);
+            this.TrailerHitchCheckBox.Location = new System.Drawing.Point(7, 29);
             this.TrailerHitchCheckBox.Name = "TrailerHitchCheckBox";
             this.TrailerHitchCheckBox.Size = new System.Drawing.Size(304, 29);
             this.TrailerHitchCheckBox.TabIndex = 0;
@@ -398,9 +405,9 @@
             this.ExternalFinishGroupBox.Controls.Add(this.CustomDetailingFinishRadioButton);
             this.ExternalFinishGroupBox.Controls.Add(this.PearledFinishRadioButton);
             this.ExternalFinishGroupBox.Controls.Add(this.StandardFinishRadioButton);
-            this.ExternalFinishGroupBox.Location = new System.Drawing.Point(461, 202);
+            this.ExternalFinishGroupBox.Location = new System.Drawing.Point(461, 210);
             this.ExternalFinishGroupBox.Name = "ExternalFinishGroupBox";
-            this.ExternalFinishGroupBox.Size = new System.Drawing.Size(337, 171);
+            this.ExternalFinishGroupBox.Size = new System.Drawing.Size(337, 163);
             this.ExternalFinishGroupBox.TabIndex = 21;
             this.ExternalFinishGroupBox.TabStop = false;
             this.ExternalFinishGroupBox.Text = "External Finish";
