@@ -32,12 +32,12 @@
             this.FileStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EditStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calculateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.colourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CalculateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ClearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BasePriceTextBox = new System.Windows.Forms.TextBox();
             this.BasePriceLabel = new System.Windows.Forms.Label();
             this.TradeInValueLabel = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.TotalLabel = new System.Windows.Forms.Label();
             this.TotalTextBox = new System.Windows.Forms.TextBox();
             this.AmountDueLabel = new System.Windows.Forms.Label();
-            this.AmountDueTextBox7 = new System.Windows.Forms.TextBox();
+            this.AmountDueTextBox = new System.Windows.Forms.TextBox();
             this.CarNameLabel = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
             this.CalculateButton = new System.Windows.Forms.Button();
@@ -67,6 +67,8 @@
             this.PearledFinishRadioButton = new System.Windows.Forms.RadioButton();
             this.StandardFinishRadioButton = new System.Windows.Forms.RadioButton();
             this.LogoPictureBox = new System.Windows.Forms.PictureBox();
+            this.EditColorDialog = new System.Windows.Forms.ColorDialog();
+            this.EditFontDialog = new System.Windows.Forms.FontDialog();
             this.MenuStrip.SuspendLayout();
             this.AdditionalOptionsGroupBox.SuspendLayout();
             this.ExternalFinishGroupBox.SuspendLayout();
@@ -101,65 +103,71 @@
             | System.Windows.Forms.Keys.X)));
             this.ExitToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
             this.ExitToolStripMenuItem.Text = "E&xit";
+            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // EditStripMenuItem
             // 
             this.EditStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.calculateToolStripMenuItem,
-            this.clearToolStripMenuItem,
-            this.fontToolStripMenuItem,
-            this.colourToolStripMenuItem});
+            this.CalculateToolStripMenuItem,
+            this.ClearToolStripMenuItem,
+            this.FontToolStripMenuItem,
+            this.ColourToolStripMenuItem});
             this.EditStripMenuItem.Name = "EditStripMenuItem";
             this.EditStripMenuItem.Size = new System.Drawing.Size(47, 24);
             this.EditStripMenuItem.Text = "&Edit";
             // 
-            // calculateToolStripMenuItem
+            // CalculateToolStripMenuItem
             // 
-            this.calculateToolStripMenuItem.Name = "calculateToolStripMenuItem";
-            this.calculateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
+            this.CalculateToolStripMenuItem.Name = "CalculateToolStripMenuItem";
+            this.CalculateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.A)));
-            this.calculateToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
-            this.calculateToolStripMenuItem.Text = "C&alculate";
+            this.CalculateToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.CalculateToolStripMenuItem.Text = "C&alculate";
+            this.CalculateToolStripMenuItem.Click += new System.EventHandler(this.calculateToolStripMenuItem_Click);
             // 
-            // clearToolStripMenuItem
+            // ClearToolStripMenuItem
             // 
-            this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
+            this.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem";
+            this.ClearToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.C)));
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
-            this.clearToolStripMenuItem.Text = "&Clear";
+            this.ClearToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.ClearToolStripMenuItem.Text = "&Clear";
+            this.ClearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
             // 
-            // fontToolStripMenuItem
+            // FontToolStripMenuItem
             // 
-            this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
+            this.FontToolStripMenuItem.Name = "FontToolStripMenuItem";
+            this.FontToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.O)));
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
-            this.fontToolStripMenuItem.Text = "F&ont";
+            this.FontToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.FontToolStripMenuItem.Text = "F&ont";
+            this.FontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
-            // colourToolStripMenuItem
+            // ColourToolStripMenuItem
             // 
-            this.colourToolStripMenuItem.Name = "colourToolStripMenuItem";
-            this.colourToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
+            this.ColourToolStripMenuItem.Name = "ColourToolStripMenuItem";
+            this.ColourToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.L)));
-            this.colourToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
-            this.colourToolStripMenuItem.Text = "Co&lour";
+            this.ColourToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.ColourToolStripMenuItem.Text = "Co&lour";
+            this.ColourToolStripMenuItem.Click += new System.EventHandler(this.colourToolStripMenuItem_Click);
             // 
             // HelpStripMenuItem
             // 
             this.HelpStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
+            this.AboutToolStripMenuItem});
             this.HelpStripMenuItem.Name = "HelpStripMenuItem";
             this.HelpStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.HelpStripMenuItem.Text = "&Help";
             // 
-            // aboutToolStripMenuItem
+            // AboutToolStripMenuItem
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
+            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
+            this.AboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.B)));
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
-            this.aboutToolStripMenuItem.Text = "A&bout";
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(206, 24);
+            this.AboutToolStripMenuItem.Text = "A&bout";
+            this.AboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // BasePriceTextBox
             // 
@@ -212,6 +220,7 @@
             this.AdditionalItemsTextBox.Location = new System.Drawing.Point(214, 175);
             this.AdditionalItemsTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.AdditionalItemsTextBox.Name = "AdditionalItemsTextBox";
+            this.AdditionalItemsTextBox.ReadOnly = true;
             this.AdditionalItemsTextBox.Size = new System.Drawing.Size(231, 30);
             this.AdditionalItemsTextBox.TabIndex = 5;
             // 
@@ -230,6 +239,7 @@
             this.SubTotalTextBox.Location = new System.Drawing.Point(214, 218);
             this.SubTotalTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.SubTotalTextBox.Name = "SubTotalTextBox";
+            this.SubTotalTextBox.ReadOnly = true;
             this.SubTotalTextBox.Size = new System.Drawing.Size(231, 30);
             this.SubTotalTextBox.TabIndex = 7;
             // 
@@ -248,6 +258,7 @@
             this.TaxTextBox.Location = new System.Drawing.Point(214, 262);
             this.TaxTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TaxTextBox.Name = "TaxTextBox";
+            this.TaxTextBox.ReadOnly = true;
             this.TaxTextBox.Size = new System.Drawing.Size(231, 30);
             this.TaxTextBox.TabIndex = 9;
             // 
@@ -266,6 +277,7 @@
             this.TotalTextBox.Location = new System.Drawing.Point(214, 306);
             this.TotalTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TotalTextBox.Name = "TotalTextBox";
+            this.TotalTextBox.ReadOnly = true;
             this.TotalTextBox.Size = new System.Drawing.Size(231, 30);
             this.TotalTextBox.TabIndex = 11;
             // 
@@ -279,13 +291,14 @@
             this.AmountDueLabel.TabIndex = 14;
             this.AmountDueLabel.Text = "Amount Due:";
             // 
-            // AmountDueTextBox7
+            // AmountDueTextBox
             // 
-            this.AmountDueTextBox7.Location = new System.Drawing.Point(214, 350);
-            this.AmountDueTextBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.AmountDueTextBox7.Name = "AmountDueTextBox7";
-            this.AmountDueTextBox7.Size = new System.Drawing.Size(231, 30);
-            this.AmountDueTextBox7.TabIndex = 13;
+            this.AmountDueTextBox.Location = new System.Drawing.Point(214, 350);
+            this.AmountDueTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.AmountDueTextBox.Name = "AmountDueTextBox";
+            this.AmountDueTextBox.ReadOnly = true;
+            this.AmountDueTextBox.Size = new System.Drawing.Size(231, 30);
+            this.AmountDueTextBox.TabIndex = 13;
             // 
             // CarNameLabel
             // 
@@ -304,6 +317,7 @@
             this.ExitButton.TabIndex = 17;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // CalculateButton
             // 
@@ -313,6 +327,7 @@
             this.CalculateButton.TabIndex = 18;
             this.CalculateButton.Text = "Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
+            this.CalculateButton.Click += new System.EventHandler(this.calculateToolStripMenuItem_Click);
             // 
             // ClearButton
             // 
@@ -322,6 +337,7 @@
             this.ClearButton.TabIndex = 19;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
             // 
             // AdditionalOptionsGroupBox
             // 
@@ -363,7 +379,7 @@
             this.DoorSillCheckBox.Name = "DoorSillCheckBox";
             this.DoorSillCheckBox.Size = new System.Drawing.Size(268, 29);
             this.DoorSillCheckBox.TabIndex = 1;
-            this.DoorSillCheckBox.Text = "Door Sill Garnish - $242.39";
+            this.DoorSillCheckBox.Text = "Door Sill Garnish - $283.83";
             this.DoorSillCheckBox.UseVisualStyleBackColor = true;
             // 
             // TrailerHitchCheckBox
@@ -371,9 +387,9 @@
             this.TrailerHitchCheckBox.AutoSize = true;
             this.TrailerHitchCheckBox.Location = new System.Drawing.Point(6, 29);
             this.TrailerHitchCheckBox.Name = "TrailerHitchCheckBox";
-            this.TrailerHitchCheckBox.Size = new System.Drawing.Size(294, 29);
+            this.TrailerHitchCheckBox.Size = new System.Drawing.Size(304, 29);
             this.TrailerHitchCheckBox.TabIndex = 0;
-            this.TrailerHitchCheckBox.Text = "Trailer Hitch Harness-$242.39";
+            this.TrailerHitchCheckBox.Text = "Trailer Hitch Harness - $242.39";
             this.TrailerHitchCheckBox.UseVisualStyleBackColor = true;
             // 
             // ExternalFinishGroupBox
@@ -453,7 +469,7 @@
             this.Controls.Add(this.LogoPictureBox);
             this.Controls.Add(this.CarNameLabel);
             this.Controls.Add(this.AmountDueLabel);
-            this.Controls.Add(this.AmountDueTextBox7);
+            this.Controls.Add(this.AmountDueTextBox);
             this.Controls.Add(this.TotalLabel);
             this.Controls.Add(this.TotalTextBox);
             this.Controls.Add(this.TaxLabel);
@@ -491,12 +507,12 @@
         private System.Windows.Forms.ToolStripMenuItem FileStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem EditStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calculateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem colourToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CalculateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ClearToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FontToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ColourToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HelpStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
         private System.Windows.Forms.TextBox BasePriceTextBox;
         private System.Windows.Forms.Label BasePriceLabel;
         private System.Windows.Forms.Label TradeInValueLabel;
@@ -510,7 +526,7 @@
         private System.Windows.Forms.Label TotalLabel;
         private System.Windows.Forms.TextBox TotalTextBox;
         private System.Windows.Forms.Label AmountDueLabel;
-        private System.Windows.Forms.TextBox AmountDueTextBox7;
+        private System.Windows.Forms.TextBox AmountDueTextBox;
         private System.Windows.Forms.Label CarNameLabel;
         private System.Windows.Forms.PictureBox LogoPictureBox;
         private System.Windows.Forms.Button ExitButton;
@@ -526,6 +542,8 @@
         private System.Windows.Forms.RadioButton CustomDetailingFinishRadioButton;
         private System.Windows.Forms.RadioButton PearledFinishRadioButton;
         private System.Windows.Forms.RadioButton StandardFinishRadioButton;
+        private System.Windows.Forms.ColorDialog EditColorDialog;
+        private System.Windows.Forms.FontDialog EditFontDialog;
     }
 }
 
