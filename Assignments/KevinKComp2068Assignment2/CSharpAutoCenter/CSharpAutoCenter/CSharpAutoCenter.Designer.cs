@@ -4,7 +4,7 @@
     {
          /*Author: Kevin Kan
          * Student Number: 200213257
-         * Date: Oct. 3, 2013
+         * Date: Oct. 6, 2013
          * Purpose: This application calculates the car new purchase value with several additional accessories, an external finish and
          * factors in the trade in value discount. This application has the use of menus and buttons.
          */
@@ -34,6 +34,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.FileStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,14 +76,25 @@
             this.LogoPictureBox = new System.Windows.Forms.PictureBox();
             this.EditColorDialog = new System.Windows.Forms.ColorDialog();
             this.EditFontDialog = new System.Windows.Forms.FontDialog();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ExitContextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FontContextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ColourContextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ClearContextToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CalculateContextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutContextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.MenuStrip.SuspendLayout();
             this.AdditionalOptionsGroupBox.SuspendLayout();
             this.ExternalFinishGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuStrip
             // 
+            this.MenuStrip.ContextMenuStrip = this.contextMenuStrip1;
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileStripMenuItem,
             this.EditStripMenuItem,
@@ -182,7 +194,8 @@
             this.BasePriceTextBox.Name = "BasePriceTextBox";
             this.BasePriceTextBox.Size = new System.Drawing.Size(231, 30);
             this.BasePriceTextBox.TabIndex = 1;
-            this.BasePriceTextBox.Text = "0";
+            this.BasePriceTextBox.Text = "$0.00";
+            this.BasePriceTextBox.Leave += new System.EventHandler(this.BasePriceTextBox_Leave);
             // 
             // BasePriceLabel
             // 
@@ -211,7 +224,8 @@
             this.TradeInValueTextBox.Name = "TradeInValueTextBox";
             this.TradeInValueTextBox.Size = new System.Drawing.Size(231, 30);
             this.TradeInValueTextBox.TabIndex = 3;
-            this.TradeInValueTextBox.Text = "0";
+            this.TradeInValueTextBox.Text = "$0.00";
+            this.TradeInValueTextBox.Leave += new System.EventHandler(this.BasePriceTextBox_Leave);
             // 
             // AdditionalItemsLabel
             // 
@@ -370,6 +384,7 @@
             this.BackupSensorCheckBox.TabIndex = 3;
             this.BackupSensorCheckBox.Text = "Backup Sensor - $834.12";
             this.BackupSensorCheckBox.UseVisualStyleBackColor = true;
+            this.BackupSensorCheckBox.CheckedChanged += new System.EventHandler(this.TrailerHitchCheckBox_CheckedChanged);
             // 
             // FogLightCheckBox
             // 
@@ -380,6 +395,7 @@
             this.FogLightCheckBox.TabIndex = 2;
             this.FogLightCheckBox.Text = "Fog Lights - $660.79";
             this.FogLightCheckBox.UseVisualStyleBackColor = true;
+            this.FogLightCheckBox.CheckedChanged += new System.EventHandler(this.TrailerHitchCheckBox_CheckedChanged);
             // 
             // DoorSillCheckBox
             // 
@@ -390,6 +406,7 @@
             this.DoorSillCheckBox.TabIndex = 1;
             this.DoorSillCheckBox.Text = "Door Sill Garnish - $283.83";
             this.DoorSillCheckBox.UseVisualStyleBackColor = true;
+            this.DoorSillCheckBox.CheckedChanged += new System.EventHandler(this.TrailerHitchCheckBox_CheckedChanged);
             // 
             // TrailerHitchCheckBox
             // 
@@ -400,6 +417,7 @@
             this.TrailerHitchCheckBox.TabIndex = 0;
             this.TrailerHitchCheckBox.Text = "Trailer Hitch Harness - $242.39";
             this.TrailerHitchCheckBox.UseVisualStyleBackColor = true;
+            this.TrailerHitchCheckBox.CheckedChanged += new System.EventHandler(this.TrailerHitchCheckBox_CheckedChanged);
             // 
             // ExternalFinishGroupBox
             // 
@@ -423,6 +441,7 @@
             this.ChromeGoldFinishRadioButton.TabIndex = 3;
             this.ChromeGoldFinishRadioButton.Text = "Chrome/Gold - $2545.67";
             this.ChromeGoldFinishRadioButton.UseVisualStyleBackColor = true;
+            this.ChromeGoldFinishRadioButton.CheckedChanged += new System.EventHandler(this.TrailerHitchCheckBox_CheckedChanged);
             // 
             // CustomDetailingFinishRadioButton
             // 
@@ -433,6 +452,7 @@
             this.CustomDetailingFinishRadioButton.TabIndex = 2;
             this.CustomDetailingFinishRadioButton.Text = "Custom Detailing - $1500.00";
             this.CustomDetailingFinishRadioButton.UseVisualStyleBackColor = true;
+            this.CustomDetailingFinishRadioButton.CheckedChanged += new System.EventHandler(this.TrailerHitchCheckBox_CheckedChanged);
             // 
             // PearledFinishRadioButton
             // 
@@ -443,6 +463,7 @@
             this.PearledFinishRadioButton.TabIndex = 1;
             this.PearledFinishRadioButton.Text = "Pearled - $850.00";
             this.PearledFinishRadioButton.UseVisualStyleBackColor = true;
+            this.PearledFinishRadioButton.CheckedChanged += new System.EventHandler(this.TrailerHitchCheckBox_CheckedChanged);
             // 
             // StandardFinishRadioButton
             // 
@@ -455,6 +476,7 @@
             this.StandardFinishRadioButton.TabStop = true;
             this.StandardFinishRadioButton.Text = "Standard - $0.00";
             this.StandardFinishRadioButton.UseVisualStyleBackColor = true;
+            this.StandardFinishRadioButton.CheckedChanged += new System.EventHandler(this.TrailerHitchCheckBox_CheckedChanged);
             // 
             // LogoPictureBox
             // 
@@ -465,11 +487,82 @@
             this.LogoPictureBox.TabIndex = 16;
             this.LogoPictureBox.TabStop = false;
             // 
+            // EditFontDialog
+            // 
+            this.EditFontDialog.Color = System.Drawing.SystemColors.ControlText;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ExitContextToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.CalculateContextToolStripMenuItem,
+            this.ClearContextToolStripMenuItem1,
+            this.FontContextToolStripMenuItem,
+            this.ColourContextToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.AboutContextToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(140, 160);
+            // 
+            // ExitContextToolStripMenuItem
+            // 
+            this.ExitContextToolStripMenuItem.Name = "ExitContextToolStripMenuItem";
+            this.ExitContextToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.ExitContextToolStripMenuItem.Text = "E&xit";
+            this.ExitContextToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            // 
+            // FontContextToolStripMenuItem
+            // 
+            this.FontContextToolStripMenuItem.Name = "FontContextToolStripMenuItem";
+            this.FontContextToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.FontContextToolStripMenuItem.Text = "F&ont";
+            this.FontContextToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
+            // 
+            // ColourContextToolStripMenuItem
+            // 
+            this.ColourContextToolStripMenuItem.Name = "ColourContextToolStripMenuItem";
+            this.ColourContextToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.ColourContextToolStripMenuItem.Text = "Co&lour";
+            this.ColourContextToolStripMenuItem.Click += new System.EventHandler(this.colourToolStripMenuItem_Click);
+            // 
+            // ClearContextToolStripMenuItem1
+            // 
+            this.ClearContextToolStripMenuItem1.Name = "ClearContextToolStripMenuItem1";
+            this.ClearContextToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.ClearContextToolStripMenuItem1.Text = "&Clear";
+            this.ClearContextToolStripMenuItem1.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
+            // 
+            // CalculateContextToolStripMenuItem
+            // 
+            this.CalculateContextToolStripMenuItem.Name = "CalculateContextToolStripMenuItem";
+            this.CalculateContextToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.CalculateContextToolStripMenuItem.Text = "C&alculate";
+            this.CalculateContextToolStripMenuItem.Click += new System.EventHandler(this.calculateToolStripMenuItem_Click);
+            // 
+            // AboutContextToolStripMenuItem
+            // 
+            this.AboutContextToolStripMenuItem.Name = "AboutContextToolStripMenuItem";
+            this.AboutContextToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.AboutContextToolStripMenuItem.Text = "A&bout";
+            this.AboutContextToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            // 
             // CSharpAutoCenterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1009, 424);
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.ExternalFinishGroupBox);
             this.Controls.Add(this.AdditionalOptionsGroupBox);
             this.Controls.Add(this.ClearButton);
@@ -505,6 +598,7 @@
             this.ExternalFinishGroupBox.ResumeLayout(false);
             this.ExternalFinishGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -553,6 +647,15 @@
         private System.Windows.Forms.RadioButton StandardFinishRadioButton;
         private System.Windows.Forms.ColorDialog EditColorDialog;
         private System.Windows.Forms.FontDialog EditFontDialog;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem ExitContextToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem CalculateContextToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ClearContextToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem FontContextToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ColourContextToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem AboutContextToolStripMenuItem;
     }
 }
 
