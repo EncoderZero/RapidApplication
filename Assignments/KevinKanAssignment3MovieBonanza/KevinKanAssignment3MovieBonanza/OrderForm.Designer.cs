@@ -38,7 +38,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MoviePosterPictureBox = new System.Windows.Forms.PictureBox();
-            this.CategoryextBox = new System.Windows.Forms.TextBox();
+            this.CategoryTextBox = new System.Windows.Forms.TextBox();
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.CategoryLabel = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
@@ -120,6 +120,7 @@
             // 
             // MoviePosterPictureBox
             // 
+            this.MoviePosterPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MoviePosterPictureBox.Location = new System.Drawing.Point(36, 35);
             this.MoviePosterPictureBox.Margin = new System.Windows.Forms.Padding(5);
             this.MoviePosterPictureBox.Name = "MoviePosterPictureBox";
@@ -127,16 +128,16 @@
             this.MoviePosterPictureBox.TabIndex = 1;
             this.MoviePosterPictureBox.TabStop = false;
             // 
-            // CategoryextBox
+            // CategoryTextBox
             // 
-            this.CategoryextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CategoryextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategoryextBox.Location = new System.Drawing.Point(151, 724);
-            this.CategoryextBox.Margin = new System.Windows.Forms.Padding(5);
-            this.CategoryextBox.Name = "CategoryextBox";
-            this.CategoryextBox.ReadOnly = true;
-            this.CategoryextBox.Size = new System.Drawing.Size(303, 34);
-            this.CategoryextBox.TabIndex = 11;
+            this.CategoryTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CategoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoryTextBox.Location = new System.Drawing.Point(151, 724);
+            this.CategoryTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.CategoryTextBox.Name = "CategoryTextBox";
+            this.CategoryTextBox.ReadOnly = true;
+            this.CategoryTextBox.Size = new System.Drawing.Size(303, 34);
+            this.CategoryTextBox.TabIndex = 11;
             // 
             // TitleTextBox
             // 
@@ -174,7 +175,7 @@
             // MovieSelectGroupBox
             // 
             this.MovieSelectGroupBox.Controls.Add(this.MoviePosterPictureBox);
-            this.MovieSelectGroupBox.Controls.Add(this.CategoryextBox);
+            this.MovieSelectGroupBox.Controls.Add(this.CategoryTextBox);
             this.MovieSelectGroupBox.Controls.Add(this.TitleTextBox);
             this.MovieSelectGroupBox.Controls.Add(this.CategoryLabel);
             this.MovieSelectGroupBox.Controls.Add(this.TitleLabel);
@@ -215,6 +216,7 @@
             this.DVDCheckBox.TabIndex = 20;
             this.DVDCheckBox.Text = "Order DVD (additional $10 charge)";
             this.DVDCheckBox.UseVisualStyleBackColor = true;
+            this.DVDCheckBox.CheckedChanged += new System.EventHandler(this.DVDCheckBox_CheckedChanged);
             // 
             // GrandTotalTextBox
             // 
@@ -390,7 +392,7 @@
         private System.Windows.Forms.ToolStripMenuItem cancelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.TextBox CategoryextBox;
+        private System.Windows.Forms.TextBox CategoryTextBox;
         private System.Windows.Forms.TextBox TitleTextBox;
         private System.Windows.Forms.Label CategoryLabel;
         private System.Windows.Forms.Label TitleLabel;

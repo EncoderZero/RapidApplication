@@ -23,6 +23,8 @@ namespace KevinKanAssignment3MovieBonanza
         private string movieImage,movieName,movieCategory;
         private decimal cost,subtotal,tax,totalCost;
 
+        private const decimal TAX_RATE=0.13m;
+
         string[] passData = new string[5]; //name,category,image,cost,dvdmessage
         private Form previousForm;
        //SET FUNCTIONS
@@ -37,10 +39,7 @@ namespace KevinKanAssignment3MovieBonanza
         //pass along data from previous form selection
         public string[] PassData {
             set {
-                for (int i = 0; i < value.Length; i++)
-                {
-                    passData[i] = value[i];
-                }
+                passData = value;
             }//end of set
         }//end PassData
        //END OF SET FUNCTIONS
@@ -48,7 +47,6 @@ namespace KevinKanAssignment3MovieBonanza
         public OrderForm()
         {
             InitializeComponent();
-            passData[4] = "";
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -58,13 +56,20 @@ namespace KevinKanAssignment3MovieBonanza
 
         private void CancelButton_Click(object sender, EventArgs e)
         {//hide this form and show previous form
-            this.Hide();
             previousForm.Show();
+            this.Hide();
         }
 
         private void OrderForm_Activated(object sender, EventArgs e)
         {// when form is activated fill in all of the items in the form
-
+            //set background image
+            Image newImage = Image.FromFile("../../Resources/" + passData[2]);
+            MoviePosterPictureBox.BackgroundImage = newImage;
+            decimal.TryParse(passData[3], out cost);
+            CostTextBox.Text = passData[3];
+            TitleTextBox.Text = passData[0];
+            CategoryTextBox.Text = passData[1];
+            calculatePrice();
         }
 
         private void StreamButton_Click(object sender, EventArgs e)
@@ -72,6 +77,23 @@ namespace KevinKanAssignment3MovieBonanza
             newStream.PassData = passData;
             this.Hide();
             newStream.Show();
+        }//end of streamButton click
+
+        public void calculatePrice() {
+            //function to display and caluculations of the total cost of purchase
+            subtotal = (DVDCheckBox.Checked)?cost + 10.00m:cost;
+            tax = subtotal * TAX_RATE;
+            totalCost = subtotal + tax;
+            SubTotalTextBox.Text = subtotal.ToString("C");
+            TaxTextBox.Text = tax.ToString("C");
+            GrandTotalTextBox.Text = totalCost.ToString("C");
+            passData[3] = totalCost.ToString("C");
         }
-    }
+
+        private void DVDCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            passData[4] =(DVDCheckBox.Checked)? " and a DVD copy has been sent":"";
+            calculatePrice();
+        } 
+    }//end of class
 }

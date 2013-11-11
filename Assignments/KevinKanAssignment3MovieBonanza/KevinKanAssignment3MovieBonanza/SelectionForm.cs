@@ -24,13 +24,13 @@ namespace KevinKanAssignment3MovieBonanza
         //create order form      
         OrderForm newOrder = new OrderForm();
         //set selected var
-        private string movieImage = "", movieName = "", movieCategorySelected = "",cost="";
+        private string movieImage = "noMovie.jpeg", movieName = "", movieCategorySelected = "", cost = "";
         //set arrays of movie data
         private string[,] movieData;
         private string[] movieTitleItemList;
         private string[,] moviePricing = new string[,]{{"Comedy","1.99"},{"Drama","1.99"},
-        {"Action","1.99"},{"Sci-Fi","1.99"},{"Horror","1.99"},{"Thriller","1.99"}, {"Family","1.99"}
-        ,{"New Release","1.99"}};
+        {"Action","2.99"},{"Sci-Fi","2.99"},{"Horror","2.99"},{"Thriller","1.99"}, {"Family","0.99"}
+        ,{"New Release","4.99"}};
         public SelectionForm()
         {
             InitializeComponent();
@@ -70,7 +70,7 @@ namespace KevinKanAssignment3MovieBonanza
         private void NextButton_Click(object sender, EventArgs e)
         {
             newOrder.PreviousForm = this;
-            string[] passData = new string[] { movieName, movieCategorySelected, movieImage, cost };//name,category,image,cost
+            string[] passData = new string[] { movieName, movieCategorySelected, movieImage, cost,"" };//name,category,image,cost,dvdMessage
 
             newOrder.PassData = passData;
             this.Hide();

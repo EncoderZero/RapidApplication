@@ -16,7 +16,7 @@ namespace KevinKanAssignment3MovieBonanza
 {
     public partial class StreamForm : Form
     {
-        private string movieImage,movieName;
+        private string movieMessage="";
         private decimal totalCost;
 
         string[] passData = new string[5];//name,category,image,cost,dvdmessage
@@ -26,10 +26,8 @@ namespace KevinKanAssignment3MovieBonanza
         {
             set
             {
-                for (int i = 0; i < value.Length; i++)
-                {
-                    passData[i] = value[i];
-                }
+               passData = value;
+               passData[4] = "";
             }//end of set
         }//end PassData
         //END OF SET FUNCTIONS
@@ -37,11 +35,20 @@ namespace KevinKanAssignment3MovieBonanza
         public StreamForm()
         {
             InitializeComponent();
+           
         }
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void StreamForm_Load(object sender, EventArgs e)
+        {//when the form is loaded or activated display thes messages
+            Image newImage = (passData[2] != "") ? Image.FromFile("../../Resources/" + passData[2]) : Image.FromFile("../../Resources/noMovie.jpeg");
+            MoviePosterPictureBox.BackgroundImage = newImage;
+            movieMessage = "Your Account has been billed " + passData[3]+ passData[4]+Environment.NewLine + passData[0]+" will stream in about a minute.";
+            MovieInfoTextBox.Text = movieMessage;
         }
     }
 }

@@ -37,6 +37,7 @@
             // 
             // MoviePosterPictureBox
             // 
+            this.MoviePosterPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MoviePosterPictureBox.Location = new System.Drawing.Point(28, 14);
             this.MoviePosterPictureBox.Margin = new System.Windows.Forms.Padding(5);
             this.MoviePosterPictureBox.Name = "MoviePosterPictureBox";
@@ -95,7 +96,10 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "StreamForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Bonanza Thank You!";
+            this.Activated += new System.EventHandler(this.StreamForm_Load);
+            this.Load += new System.EventHandler(this.StreamForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MoviePosterPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
