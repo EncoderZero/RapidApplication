@@ -35,10 +35,10 @@
             this.CategoryLabel = new System.Windows.Forms.Label();
             this.CostLabel = new System.Windows.Forms.Label();
             this.TitleTextBox = new System.Windows.Forms.TextBox();
-            this.CategoryextBox = new System.Windows.Forms.TextBox();
+            this.CategoryTextBox = new System.Windows.Forms.TextBox();
             this.CostTextBox = new System.Windows.Forms.TextBox();
-            this.MoviePosterPictureBox = new System.Windows.Forms.PictureBox();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.MoviePosterPictureBox = new System.Windows.Forms.PictureBox();
             this.MovieSelectionGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePosterPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +47,7 @@
             // 
             this.NextButton.ForeColor = System.Drawing.Color.Black;
             this.NextButton.Location = new System.Drawing.Point(779, 676);
-            this.NextButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.NextButton.Margin = new System.Windows.Forms.Padding(5);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(131, 42);
             this.NextButton.TabIndex = 1;
@@ -61,9 +61,9 @@
             this.MovieSelectionGroupBox.Controls.Add(this.MovieSelectionListBox);
             this.MovieSelectionGroupBox.ForeColor = System.Drawing.Color.White;
             this.MovieSelectionGroupBox.Location = new System.Drawing.Point(87, 22);
-            this.MovieSelectionGroupBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.MovieSelectionGroupBox.Margin = new System.Windows.Forms.Padding(5);
             this.MovieSelectionGroupBox.Name = "MovieSelectionGroupBox";
-            this.MovieSelectionGroupBox.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.MovieSelectionGroupBox.Padding = new System.Windows.Forms.Padding(5);
             this.MovieSelectionGroupBox.Size = new System.Drawing.Size(315, 517);
             this.MovieSelectionGroupBox.TabIndex = 2;
             this.MovieSelectionGroupBox.TabStop = false;
@@ -73,32 +73,13 @@
             // 
             this.MovieSelectionListBox.FormattingEnabled = true;
             this.MovieSelectionListBox.ItemHeight = 29;
-            this.MovieSelectionListBox.Items.AddRange(new object[] {
-            "Season of the Witch",
-            "The Green Hornet",
-            "The Dilemma",
-            "Death Race 2 ",
-            "Company Men",
-            "No Strings Attached",
-            "The Way Back",
-            "The Mechanic",
-            "The Rite",
-            "Sanctum",
-            "The Other Woman",
-            "The Roommate",
-            "Waiting for Forever",
-            "Cedar Rapids",
-            "Gnomeo and Juliet",
-            "Just Go With It",
-            "The Eagle",
-            "I am Number Four",
-            "Footloose",
-            "Real Steel"});
             this.MovieSelectionListBox.Location = new System.Drawing.Point(20, 37);
-            this.MovieSelectionListBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.MovieSelectionListBox.Margin = new System.Windows.Forms.Padding(5);
             this.MovieSelectionListBox.Name = "MovieSelectionListBox";
             this.MovieSelectionListBox.Size = new System.Drawing.Size(273, 468);
+            this.MovieSelectionListBox.Sorted = true;
             this.MovieSelectionListBox.TabIndex = 1;
+            this.MovieSelectionListBox.SelectedIndexChanged += new System.EventHandler(this.MovieSelectionListBox_SelectedIndexChanged);
             // 
             // TitleLabel
             // 
@@ -138,7 +119,7 @@
             this.TitleTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TitleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TitleTextBox.Location = new System.Drawing.Point(30, 588);
-            this.TitleTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TitleTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.TitleTextBox.Name = "TitleTextBox";
             this.TitleTextBox.ReadOnly = true;
             this.TitleTextBox.Size = new System.Drawing.Size(413, 34);
@@ -146,34 +127,25 @@
             // 
             // CategoryextBox
             // 
-            this.CategoryextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CategoryextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategoryextBox.Location = new System.Drawing.Point(30, 670);
-            this.CategoryextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.CategoryextBox.Name = "CategoryextBox";
-            this.CategoryextBox.ReadOnly = true;
-            this.CategoryextBox.Size = new System.Drawing.Size(247, 34);
-            this.CategoryextBox.TabIndex = 7;
+            this.CategoryTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CategoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoryTextBox.Location = new System.Drawing.Point(30, 670);
+            this.CategoryTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.CategoryTextBox.Name = "CategoryextBox";
+            this.CategoryTextBox.ReadOnly = true;
+            this.CategoryTextBox.Size = new System.Drawing.Size(247, 34);
+            this.CategoryTextBox.TabIndex = 7;
             // 
             // CostTextBox
             // 
             this.CostTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CostTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CostTextBox.Location = new System.Drawing.Point(287, 670);
-            this.CostTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.CostTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.CostTextBox.Name = "CostTextBox";
             this.CostTextBox.ReadOnly = true;
             this.CostTextBox.Size = new System.Drawing.Size(176, 34);
             this.CostTextBox.TabIndex = 8;
-            // 
-            // MoviePosterPictureBox
-            // 
-            this.MoviePosterPictureBox.Location = new System.Drawing.Point(490, 22);
-            this.MoviePosterPictureBox.Margin = new System.Windows.Forms.Padding(5);
-            this.MoviePosterPictureBox.Name = "MoviePosterPictureBox";
-            this.MoviePosterPictureBox.Size = new System.Drawing.Size(420, 644);
-            this.MoviePosterPictureBox.TabIndex = 0;
-            this.MoviePosterPictureBox.TabStop = false;
             // 
             // ExitButton
             // 
@@ -187,6 +159,17 @@
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // MoviePosterPictureBox
+            // 
+            this.MoviePosterPictureBox.BackgroundImage = global::KevinKanAssignment3MovieBonanza.Properties.Resources.noMovie;
+            this.MoviePosterPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MoviePosterPictureBox.Location = new System.Drawing.Point(490, 22);
+            this.MoviePosterPictureBox.Margin = new System.Windows.Forms.Padding(5);
+            this.MoviePosterPictureBox.Name = "MoviePosterPictureBox";
+            this.MoviePosterPictureBox.Size = new System.Drawing.Size(420, 644);
+            this.MoviePosterPictureBox.TabIndex = 0;
+            this.MoviePosterPictureBox.TabStop = false;
+            // 
             // SelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
@@ -196,7 +179,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.CostTextBox);
-            this.Controls.Add(this.CategoryextBox);
+            this.Controls.Add(this.CategoryTextBox);
             this.Controls.Add(this.TitleTextBox);
             this.Controls.Add(this.CostLabel);
             this.Controls.Add(this.CategoryLabel);
@@ -206,7 +189,7 @@
             this.Controls.Add(this.MoviePosterPictureBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "SelectionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Bonanaza - Pick Your Film";
@@ -227,7 +210,7 @@
         private System.Windows.Forms.Label CategoryLabel;
         private System.Windows.Forms.Label CostLabel;
         private System.Windows.Forms.TextBox TitleTextBox;
-        private System.Windows.Forms.TextBox CategoryextBox;
+        private System.Windows.Forms.TextBox CategoryTextBox;
         private System.Windows.Forms.TextBox CostTextBox;
         private System.Windows.Forms.Button ExitButton;
     }

@@ -38,5 +38,10 @@ namespace KevinKanAssignment3MovieBonanza
         {
             InitializeComponent();
         }
+
+        private void ConfirmButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -119,6 +119,29 @@
   <ItemGroup>
     <None Include="Resources\Yin Yang Symbol.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cedar-rapids.jpg" />
+    <Content Include="Resources\Company_Men.jpg" />
+    <Content Include="Resources\death-race-2.jpg" />
+    <Content Include="Resources\footloose.jpg" />
+    <Content Include="Resources\green_hornet.jpg" />
+    <Content Include="Resources\i_am_number_four.jpg" />
+    <Content Include="Resources\JustGoWithIt.jpg" />
+    <None Include="Resources\noMovie.jpeg" />
+    <Content Include="Resources\No_Strings_Attached.jpg" />
+    <Content Include="Resources\real_steel.jpg" />
+    <Content Include="Resources\sanctum.jpg" />
+    <Content Include="Resources\season_of_the_witch_poster.jpg" />
+    <Content Include="Resources\The-Eagle-Poster.jpg" />
+    <Content Include="Resources\the-roommate.jpg" />
+    <Content Include="Resources\theMechanic.jpg" />
+    <Content Include="Resources\theRite.jpg" />
+    <Content Include="Resources\the_dilemma.jpg" />
+    <Content Include="Resources\the_other_woman.jpg" />
+    <Content Include="Resources\waiting_for_forever.jpg" />
+    <Content Include="Resources\way_back.jpg" />
+    <Content Include="Resources\xml\movieList.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

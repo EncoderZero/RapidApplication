@@ -63,6 +63,7 @@
             this.ConfirmButton.TabIndex = 3;
             this.ConfirmButton.Text = "OK";
             this.ConfirmButton.UseVisualStyleBackColor = true;
+            this.ConfirmButton.Click += new System.EventHandler(this.ConfirmButton_Click);
             // 
             // MovieInfoTextBox
             // 
@@ -92,7 +93,7 @@
             this.Controls.Add(this.ThanksLabel);
             this.Controls.Add(this.MoviePosterPictureBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "StreamForm";
             this.Text = "Movie Bonanza Thank You!";
             ((System.ComponentModel.ISupportInitialize)(this.MoviePosterPictureBox)).EndInit();
