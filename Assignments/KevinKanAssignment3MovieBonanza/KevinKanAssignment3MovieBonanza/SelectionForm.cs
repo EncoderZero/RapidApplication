@@ -31,17 +31,17 @@ namespace KevinKanAssignment3MovieBonanza
         private string[,] moviePricing = new string[,]{{"Comedy","1.99"},{"Drama","1.99"},
         {"Action","2.99"},{"Sci-Fi","2.99"},{"Horror","2.99"},{"Thriller","1.99"}, {"Family","0.99"}
         ,{"New Release","4.99"}};
+       
         public SelectionForm()
         {
             InitializeComponent();
-
+            //cout number of movies
             int count = movieListXml.XPathSelectElements("//Movie").Count();
-
-            IEnumerable<XElement> test = movieListXml.XPathSelectElements("//Name").ToArray();
+            //create arrays of each node infomration type
             IEnumerable<XElement> movieTitles = movieListXml.XPathSelectElements("//Name").ToArray();
             IEnumerable<XElement> movieCategorys = movieListXml.XPathSelectElements("//Category").ToArray();
             IEnumerable<XElement> moviePosters = movieListXml.XPathSelectElements("//Poster").ToArray();
-            //set arrays of movie data
+            //set arrays of movie data, 0 is name , 1=category, 2 is poster image filename
             movieData=new string[count,3];
             movieTitleItemList = new string[count];
             int i = 0;
@@ -64,18 +64,24 @@ namespace KevinKanAssignment3MovieBonanza
                 i++;
             }
             Array.Sort(movieTitleItemList);
-            MovieSelectionListBox.DataSource = movieTitleItemList;
+            //add array to listbox
+            MovieSelectionListBox.Items.AddRange(movieTitleItemList);
         }//End constructor
 
         private void NextButton_Click(object sender, EventArgs e)
-        {
-            newOrder.PreviousForm = this;
-            string[] passData = new string[] { movieName, movieCategorySelected, movieImage, cost,"" };//name,category,image,cost,dvdMessage
+        {//click next button
+            if (MovieSelectionListBox.SelectedIndex == -1)
+            {//if no movie is selected
+                MessageBox.Show("Sorry, but you need to pick a movie first", "Can't stream", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else {// if movie is selected 
+                newOrder.PreviousForm = this;
+                string[] passData = new string[] { movieName, movieCategorySelected, movieImage, cost, "" };//name,category,image,cost,dvdMessage
 
-            newOrder.PassData = passData;
-            this.Hide();
-            newOrder.Show();
-            
+                newOrder.PassData = passData;
+                this.Hide();
+                newOrder.Show();
+            }
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -84,11 +90,14 @@ namespace KevinKanAssignment3MovieBonanza
         }
 
         private void MovieSelectionListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        {//if the selection changes
             int index = MovieSelectionListBox.SelectedIndex;
             if (index < 0)
-            {//if nothing is selected
-
+            {//if nothing is selected change all values to no movie values
+                Image newImage = Image.FromFile("../../Resources/noMovie.jpeg");
+                movieName = "";
+                movieCategorySelected = "";
+                cost = "";
             }
             else { //if something is selected
                 //set the movie image
@@ -107,12 +116,12 @@ namespace KevinKanAssignment3MovieBonanza
                                 cost = moviePricing[j, 1];
                             }
                         }
-                        TitleTextBox.Text = movieName;
-                        CategoryTextBox.Text = movieCategorySelected;
-                        CostTextBox.Text = cost;
                     }
                 }//end of for loop
                 MoviePosterPictureBox.BackgroundImage =newImage;
+                TitleTextBox.Text = movieName;
+                CategoryTextBox.Text = movieCategorySelected;
+                CostTextBox.Text = cost;
             }//end if/else block
         }
     }

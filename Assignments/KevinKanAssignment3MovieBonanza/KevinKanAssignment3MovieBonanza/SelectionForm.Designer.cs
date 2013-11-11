@@ -125,13 +125,13 @@
             this.TitleTextBox.Size = new System.Drawing.Size(413, 34);
             this.TitleTextBox.TabIndex = 6;
             // 
-            // CategoryextBox
+            // CategoryTextBox
             // 
             this.CategoryTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CategoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CategoryTextBox.Location = new System.Drawing.Point(30, 670);
             this.CategoryTextBox.Margin = new System.Windows.Forms.Padding(5);
-            this.CategoryTextBox.Name = "CategoryextBox";
+            this.CategoryTextBox.Name = "CategoryTextBox";
             this.CategoryTextBox.ReadOnly = true;
             this.CategoryTextBox.Size = new System.Drawing.Size(247, 34);
             this.CategoryTextBox.TabIndex = 7;
@@ -190,7 +190,10 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SelectionForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Bonanaza - Pick Your Film";
             this.MovieSelectionGroupBox.ResumeLayout(false);

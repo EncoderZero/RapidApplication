@@ -104,7 +104,7 @@ namespace KevinKanAssignment3MovieBonanza
 
         private void OkButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
     }
 }

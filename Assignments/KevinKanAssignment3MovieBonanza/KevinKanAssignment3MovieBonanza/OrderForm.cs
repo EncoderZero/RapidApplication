@@ -55,7 +55,8 @@ namespace KevinKanAssignment3MovieBonanza
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
-        {//hide this form and show previous form
+        {//hide this form and show previous form after reseting form elements to default
+            DVDCheckBox.Checked = false;
             previousForm.Show();
             this.Hide();
         }
@@ -65,7 +66,6 @@ namespace KevinKanAssignment3MovieBonanza
             //set background image
             Image newImage = Image.FromFile("../../Resources/" + passData[2]);
             MoviePosterPictureBox.BackgroundImage = newImage;
-            decimal.TryParse(passData[3], out cost);
             CostTextBox.Text = passData[3];
             TitleTextBox.Text = passData[0];
             CategoryTextBox.Text = passData[1];
@@ -74,6 +74,8 @@ namespace KevinKanAssignment3MovieBonanza
 
         private void StreamButton_Click(object sender, EventArgs e)
         {//Go to next form (stream form)
+            //update total cost to pass for streaming
+            passData[3] = totalCost.ToString("C");
             newStream.PassData = passData;
             this.Hide();
             newStream.Show();
@@ -81,19 +83,26 @@ namespace KevinKanAssignment3MovieBonanza
 
         public void calculatePrice() {
             //function to display and caluculations of the total cost of purchase
+            decimal.TryParse(passData[3], out cost);
             subtotal = (DVDCheckBox.Checked)?cost + 10.00m:cost;
             tax = subtotal * TAX_RATE;
             totalCost = subtotal + tax;
             SubTotalTextBox.Text = subtotal.ToString("C");
             TaxTextBox.Text = tax.ToString("C");
             GrandTotalTextBox.Text = totalCost.ToString("C");
-            passData[3] = totalCost.ToString("C");
         }
 
         private void DVDCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             passData[4] =(DVDCheckBox.Checked)? " and a DVD copy has been sent":"";
             calculatePrice();
+        }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Print the form on the print preview
+            printForm1.PrintAction = System.Drawing.Printing.PrintAction.PrintToPreview;
+            printForm1.Print();
         } 
     }//end of class
 }
