@@ -9,13 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 /*Author Kevin Kan
  * Version Nov 10 2013
- * Selection form, Alows user to select movie
+ * Selection form, Alows user to select movie and display initial price for movie of that genre
  */
 namespace KevinKanAssignment3MovieBonanza
 {
     public partial class SelectionForm : Form
     {
         OrderForm newOrder = new OrderForm();
+        private string movieImage,movieName,movieCategory;
+        private decimal cost;
+
         public SelectionForm()
         {
             InitializeComponent();
@@ -23,8 +26,19 @@ namespace KevinKanAssignment3MovieBonanza
         }
         private void NextButton_Click(object sender, EventArgs e)
         {
-            newOrder.ShowDialog();
+            newOrder.PreviousForm = this;
+            string passCost = cost.ToString();
+            string[] passData = new string[] { movieName, movieCategory, movieImage, passCost };//name,category,image,cost
+
+            newOrder.PassData = passData;
             this.Hide();
+            newOrder.Show();
+            
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

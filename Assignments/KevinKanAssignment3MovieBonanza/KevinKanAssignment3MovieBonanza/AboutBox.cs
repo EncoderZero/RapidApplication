@@ -101,5 +101,10 @@ namespace KevinKanAssignment3MovieBonanza
             }
         }
         #endregion
+
+        private void OkButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

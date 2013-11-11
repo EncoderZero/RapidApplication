@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AppNameLabel = new System.Windows.Forms.Label();
             this.VersionLabel = new System.Windows.Forms.Label();
-            this.CopyRIghtLabel = new System.Windows.Forms.Label();
+            this.CopyRightLabel = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,14 +61,14 @@
             // 
             // CopyRIghtLabel
             // 
-            this.CopyRIghtLabel.AutoSize = true;
-            this.CopyRIghtLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CopyRIghtLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.CopyRIghtLabel.Location = new System.Drawing.Point(392, 505);
-            this.CopyRIghtLabel.Name = "CopyRIghtLabel";
-            this.CopyRIghtLabel.Size = new System.Drawing.Size(253, 25);
-            this.CopyRIghtLabel.TabIndex = 3;
-            this.CopyRIghtLabel.Text = "Copy Right Kevin Kan 2013";
+            this.CopyRightLabel.AutoSize = true;
+            this.CopyRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CopyRightLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.CopyRightLabel.Location = new System.Drawing.Point(392, 505);
+            this.CopyRightLabel.Name = "CopyRIghtLabel";
+            this.CopyRightLabel.Size = new System.Drawing.Size(253, 25);
+            this.CopyRightLabel.TabIndex = 3;
+            this.CopyRightLabel.Text = "Copy Right Kevin Kan 2013";
             // 
             // timer1
             // 
@@ -93,7 +93,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(787, 593);
             this.ControlBox = false;
-            this.Controls.Add(this.CopyRIghtLabel);
+            this.Controls.Add(this.CopyRightLabel);
             this.Controls.Add(this.VersionLabel);
             this.Controls.Add(this.AppNameLabel);
             this.Controls.Add(this.pictureBox1);
@@ -111,7 +111,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label AppNameLabel;
         private System.Windows.Forms.Label VersionLabel;
-        private System.Windows.Forms.Label CopyRIghtLabel;
+        private System.Windows.Forms.Label CopyRightLabel;
         private System.Windows.Forms.Timer timer1;
     }
 }

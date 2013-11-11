@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KevinKanAssignment3MovieBonanza")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Movie Bonaza")]
+[assembly: AssemblyDescription("Stream your movies! Thank you for downloading our app. This application allows you to stream movies anywhere in the world. For an additional $10 we will also ship you the DVD of the film you want streamed to you. For any service help please see our website at www.movieBonanza.com.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KevinKanAssignment3MovieBonanza")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyCompany("Kevin Kan Works INC.")]
+[assembly: AssemblyProduct("Movie Streaming Application")]
+[assembly: AssemblyCopyright("Copyright © Kevin Kan 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -47,6 +47,7 @@
             // ThanksLabel
             // 
             this.ThanksLabel.AutoSize = true;
+            this.ThanksLabel.ForeColor = System.Drawing.Color.White;
             this.ThanksLabel.Location = new System.Drawing.Point(12, 531);
             this.ThanksLabel.Name = "ThanksLabel";
             this.ThanksLabel.Size = new System.Drawing.Size(424, 29);
@@ -65,22 +66,25 @@
             // 
             // MovieInfoTextBox
             // 
+            this.MovieInfoTextBox.BackColor = System.Drawing.Color.Black;
             this.MovieInfoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MovieInfoTextBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.MovieInfoTextBox.ForeColor = System.Drawing.Color.White;
             this.MovieInfoTextBox.Location = new System.Drawing.Point(28, 563);
             this.MovieInfoTextBox.Multiline = true;
             this.MovieInfoTextBox.Name = "MovieInfoTextBox";
             this.MovieInfoTextBox.ReadOnly = true;
             this.MovieInfoTextBox.Size = new System.Drawing.Size(387, 126);
             this.MovieInfoTextBox.TabIndex = 5;
-            this.MovieInfoTextBox.Text = "Your Account has Been billed $15.00.\r\nBraveheart 3HD will stream in about a minut" +
-    "e.";
+            this.MovieInfoTextBox.Text = "Your Account has Been billed $15.00 and a DVD has been sent\r\nBraveheart 3HD will " +
+    "stream in about a minute.";
             this.MovieInfoTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // StreamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(448, 739);
             this.ControlBox = false;
             this.Controls.Add(this.MovieInfoTextBox);

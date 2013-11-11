@@ -45,6 +45,7 @@
             // 
             // NextButton
             // 
+            this.NextButton.ForeColor = System.Drawing.Color.Black;
             this.NextButton.Location = new System.Drawing.Point(779, 676);
             this.NextButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.NextButton.Name = "NextButton";
@@ -56,7 +57,9 @@
             // 
             // MovieSelectionGroupBox
             // 
+            this.MovieSelectionGroupBox.BackColor = System.Drawing.Color.Black;
             this.MovieSelectionGroupBox.Controls.Add(this.MovieSelectionListBox);
+            this.MovieSelectionGroupBox.ForeColor = System.Drawing.Color.White;
             this.MovieSelectionGroupBox.Location = new System.Drawing.Point(87, 22);
             this.MovieSelectionGroupBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MovieSelectionGroupBox.Name = "MovieSelectionGroupBox";
@@ -70,7 +73,28 @@
             // 
             this.MovieSelectionListBox.FormattingEnabled = true;
             this.MovieSelectionListBox.ItemHeight = 29;
-            this.MovieSelectionListBox.Location = new System.Drawing.Point(23, 36);
+            this.MovieSelectionListBox.Items.AddRange(new object[] {
+            "Season of the Witch",
+            "The Green Hornet",
+            "The Dilemma",
+            "Death Race 2 ",
+            "Company Men",
+            "No Strings Attached",
+            "The Way Back",
+            "The Mechanic",
+            "The Rite",
+            "Sanctum",
+            "The Other Woman",
+            "The Roommate",
+            "Waiting for Forever",
+            "Cedar Rapids",
+            "Gnomeo and Juliet",
+            "Just Go With It",
+            "The Eagle",
+            "I am Number Four",
+            "Footloose",
+            "Real Steel"});
+            this.MovieSelectionListBox.Location = new System.Drawing.Point(20, 37);
             this.MovieSelectionListBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.MovieSelectionListBox.Name = "MovieSelectionListBox";
             this.MovieSelectionListBox.Size = new System.Drawing.Size(273, 468);
@@ -153,6 +177,7 @@
             // 
             // ExitButton
             // 
+            this.ExitButton.ForeColor = System.Drawing.Color.Black;
             this.ExitButton.Location = new System.Drawing.Point(490, 676);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(5);
             this.ExitButton.Name = "ExitButton";
@@ -160,11 +185,13 @@
             this.ExitButton.TabIndex = 9;
             this.ExitButton.Text = "&Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // SelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(921, 730);
             this.ControlBox = false;
             this.Controls.Add(this.ExitButton);
@@ -178,6 +205,7 @@
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.MoviePosterPictureBox);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "SelectionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
