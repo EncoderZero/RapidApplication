@@ -3,101 +3,101 @@
 	<Movie>
 		<Name>Season of the Witch</Name>
 		<Category>Sci-Fi</Category>
-		<Poster>season_of_the_witch_poster.jpg</Poster>
+		<Poster>season_of_the_witch_poster</Poster>
 	</Movie>
 	<Movie>
 		<Name>The Green Hornet</Name>
 		<Category>Action</Category>
-		<Poster>green_hornet.jpg</Poster>
+		<Poster>green_hornet</Poster>
 	</Movie>
 	<Movie>
 		<Name>The Dilemma</Name>
 		<Category>Comedy</Category>
-		<Poster>the_dilemma.jpg</Poster>
+		<Poster>the_dilemma</Poster>
 	</Movie>
 	<Movie>
 		<Name>Death Race 2</Name>
 		<Category>Action</Category>
-		<Poster>death-race-2.jpg</Poster>
+		<Poster>death-race-2</Poster>
 	</Movie>
 	<Movie>
 		<Name>Company Men</Name>
 		<Category>Drama</Category>
-		<Poster>Company_Men.jpg</Poster>
+		<Poster>Company_Men</Poster>
 	</Movie>
 	<Movie>
 		<Name>No Strings Attached</Name>
 		<Category>Comedy</Category>
-		<Poster>No_Strings_Attached.jpg</Poster>
+		<Poster>No_Strings_Attached</Poster>
 	</Movie>
 	<Movie>
 		<Name>The Way Back</Name>
 		<Category>Drama</Category>
-		<Poster>way_back.jpg</Poster>
+		<Poster>way_back</Poster>
 	</Movie>
 	<Movie>
 		<Name>The Mechanic</Name>
 		<Category>Action</Category>
-		<Poster>theMechanic.jpg</Poster>
+		<Poster>theMechanic</Poster>
 	</Movie>
 	<Movie>
 		<Name>The Rite</Name>
 		<Category>Horror</Category>
-		<Poster>theRite.jpg</Poster>
+		<Poster>theRite</Poster>
 	</Movie>
 	<Movie>
 		<Name>Sanctum</Name>
 		<Category>Action</Category>
-		<Poster>sanctum.jpg</Poster>
+		<Poster>sanctum</Poster>
 	</Movie>
 	<Movie>
 		<Name>The Other Woman</Name>
 		<Category>Action</Category>
-		<Poster>the_other_woman.jpg</Poster>
+		<Poster>the_other_woman</Poster>
 	</Movie>
 	<Movie>
 		<Name>The Roommate</Name>
 		<Category>Thriller</Category>
-		<Poster>the-roommate.jpg</Poster>
+		<Poster>the-roommate</Poster>
 	</Movie>
 	<Movie>
 		<Name>Waiting for Forever</Name>
 		<Category>Drama</Category>
-		<Poster>waiting_for_forever.jpg</Poster>
+		<Poster>waiting_for_forever</Poster>
 	</Movie>
 	<Movie>
 		<Name>Cedar Rapids</Name>
 		<Category>Comedy</Category>
-		<Poster>cedar-rapids.jpg</Poster>
+		<Poster>cedar-rapids</Poster>
 	</Movie>
 	<Movie>
 		<Name>Gnomeo and Juliet</Name>
 		<Category>Family</Category>
-		<Poster>gnomeo.jpg</Poster>
+		<Poster>gnomeo</Poster>
 	</Movie>
 	<Movie>
 		<Name>Just Go With It</Name>
 		<Category>Comedy</Category>
-		<Poster>JustGoWithIt.jpg</Poster>
+		<Poster>JustGoWithIt</Poster>
 	</Movie>
 	<Movie>
 		<Name>The Eagle</Name>
 		<Category>Action</Category>
-		<Poster>The-Eagle-Poster.jpg</Poster>
+		<Poster>The-Eagle-Poster</Poster>
 	</Movie>
 	<Movie>
 		<Name>I am Number Four</Name>
 		<Category>Sci-Fi</Category>
-		<Poster>i_am_number_four.jpg</Poster>
+		<Poster>i_am_number_four</Poster>
 	</Movie>
 	<Movie>
 		<Name>Footloose</Name>
 		<Category>New Release</Category>
-		<Poster>footloose.jpg</Poster>
+		<Poster>footloose</Poster>
 	</Movie>
 	<Movie>
 		<Name>Real Steel</Name>
 		<Category>New Release</Category>
-		<Poster>real_steel.jpg</Poster>
+		<Poster>real_steel</Poster>
 	</Movie>
 </MovieList>

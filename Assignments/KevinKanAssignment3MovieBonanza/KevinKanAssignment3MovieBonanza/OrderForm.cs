@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Resources;
 /*Author Kevin Kan
  * Version Nov 10 2013
  * Order form, display preview of movie they wish to stream along with recipt. also allow
@@ -64,7 +65,7 @@ namespace KevinKanAssignment3MovieBonanza
         private void OrderForm_Activated(object sender, EventArgs e)
         {// when form is activated fill in all of the items in the form
             //set background image
-            Image newImage = Image.FromFile("../../Resources/" + passData[2]);
+            Image newImage = (Image)Properties.Resources.ResourceManager.GetObject(passData[2]);
             MoviePosterPictureBox.BackgroundImage = newImage;
             CostTextBox.Text = passData[3];
             TitleTextBox.Text = passData[0];

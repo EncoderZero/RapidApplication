@@ -11,6 +11,8 @@ using System.Xml.Schema;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Resources;
+
 /*Author Kevin Kan
  * Version Nov 10 2013
  * Selection form, Alows user to select movie and display initial price for movie of that genre
@@ -94,19 +96,19 @@ namespace KevinKanAssignment3MovieBonanza
             int index = MovieSelectionListBox.SelectedIndex;
             if (index < 0)
             {//if nothing is selected change all values to no movie values
-                Image newImage = Image.FromFile("../../Resources/noMovie.jpeg");
+                Image newImage = (Image)Properties.Resources.ResourceManager.GetObject("noMovie");
                 movieName = "";
                 movieCategorySelected = "";
                 cost = "";
             }
             else { //if something is selected
                 //set the movie image
-                Image newImage = Image.FromFile("../../Resources/noMovie.jpeg"); 
+                Image newImage = (Image)Properties.Resources.ResourceManager.GetObject("noMovie");
                 for (int i = 0; i < movieTitleItemList.Length; i++ )
                 {
                     if (movieTitleItemList[index].Equals(movieData[i, 0]))
                     {
-                        newImage = Image.FromFile("../../Resources/" + movieData[i, 2]);
+                        newImage = (Image)Properties.Resources.ResourceManager.GetObject(movieData[i, 2]);
                         //set selected vars to pass on later
                         movieImage = movieData[i, 2];
                         movieName = movieData[i, 0];

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Resources;
 /*Author Kevin Kan
  * Version Nov 10 2013
  * Stream form, Show a form to inform the user that the video is about to stream and thank them for their
@@ -45,7 +46,7 @@ namespace KevinKanAssignment3MovieBonanza
 
         private void StreamForm_Load(object sender, EventArgs e)
         {//when the form is loaded or activated display thes messages
-            Image newImage = (passData[2] != "") ? Image.FromFile("../../Resources/" + passData[2]) : Image.FromFile("../../Resources/noMovie.jpeg");
+            Image newImage = (passData[2] != "") ? (Image)Properties.Resources.ResourceManager.GetObject(passData[2]) : (Image)Properties.Resources.ResourceManager.GetObject("noMovie");
             MoviePosterPictureBox.BackgroundImage = newImage;
             movieMessage = "Your Account has been billed " + passData[3]+ passData[4]+Environment.NewLine + passData[0]+" will stream in about a minute.";
             MovieInfoTextBox.Text = movieMessage;

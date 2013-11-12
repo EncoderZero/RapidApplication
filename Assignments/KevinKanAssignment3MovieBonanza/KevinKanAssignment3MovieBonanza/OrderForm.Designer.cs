@@ -37,7 +37,6 @@
             this.cancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MoviePosterPictureBox = new System.Windows.Forms.PictureBox();
             this.CategoryTextBox = new System.Windows.Forms.TextBox();
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.CategoryLabel = new System.Windows.Forms.Label();
@@ -54,14 +53,15 @@
             this.CostTextBox = new System.Windows.Forms.TextBox();
             this.CostLabel = new System.Windows.Forms.Label();
             this.printForm1 = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
-            this.LogoPictureBox = new System.Windows.Forms.PictureBox();
             this.StreamButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
+            this.LogoPictureBox = new System.Windows.Forms.PictureBox();
+            this.MoviePosterPictureBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MoviePosterPictureBox)).BeginInit();
             this.MovieSelectGroupBox.SuspendLayout();
             this.CostGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MoviePosterPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -88,21 +88,21 @@
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(125, 24);
             this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // streamToolStripMenuItem
             // 
             this.streamToolStripMenuItem.Name = "streamToolStripMenuItem";
-            this.streamToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.streamToolStripMenuItem.Size = new System.Drawing.Size(125, 24);
             this.streamToolStripMenuItem.Text = "Strea&m";
             this.streamToolStripMenuItem.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // cancelToolStripMenuItem
             // 
             this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(125, 24);
             this.cancelToolStripMenuItem.Text = "Canc&el";
             this.cancelToolStripMenuItem.Click += new System.EventHandler(this.CancelButton_Click);
             // 
@@ -117,19 +117,9 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // MoviePosterPictureBox
-            // 
-            this.MoviePosterPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MoviePosterPictureBox.Location = new System.Drawing.Point(36, 35);
-            this.MoviePosterPictureBox.Margin = new System.Windows.Forms.Padding(5);
-            this.MoviePosterPictureBox.Name = "MoviePosterPictureBox";
-            this.MoviePosterPictureBox.Size = new System.Drawing.Size(420, 635);
-            this.MoviePosterPictureBox.TabIndex = 1;
-            this.MoviePosterPictureBox.TabStop = false;
             // 
             // CategoryTextBox
             // 
@@ -317,16 +307,6 @@
             this.printForm1.PrinterSettings = ((System.Drawing.Printing.PrinterSettings)(resources.GetObject("printForm1.PrinterSettings")));
             this.printForm1.PrintFileName = null;
             // 
-            // LogoPictureBox
-            // 
-            this.LogoPictureBox.BackgroundImage = global::KevinKanAssignment3MovieBonanza.Properties.Resources.Yin_Yang_Symbol;
-            this.LogoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LogoPictureBox.Location = new System.Drawing.Point(509, 329);
-            this.LogoPictureBox.Name = "LogoPictureBox";
-            this.LogoPictureBox.Size = new System.Drawing.Size(359, 359);
-            this.LogoPictureBox.TabIndex = 14;
-            this.LogoPictureBox.TabStop = false;
-            // 
             // StreamButton
             // 
             this.StreamButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -350,6 +330,26 @@
             this.CancelButton.Text = "Canc&el";
             this.CancelButton.UseVisualStyleBackColor = true;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // LogoPictureBox
+            // 
+            this.LogoPictureBox.BackgroundImage = global::KevinKanAssignment3MovieBonanza.Properties.Resources.Yin_Yang_Symbol;
+            this.LogoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LogoPictureBox.Location = new System.Drawing.Point(509, 329);
+            this.LogoPictureBox.Name = "LogoPictureBox";
+            this.LogoPictureBox.Size = new System.Drawing.Size(359, 359);
+            this.LogoPictureBox.TabIndex = 14;
+            this.LogoPictureBox.TabStop = false;
+            // 
+            // MoviePosterPictureBox
+            // 
+            this.MoviePosterPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MoviePosterPictureBox.Location = new System.Drawing.Point(36, 35);
+            this.MoviePosterPictureBox.Margin = new System.Windows.Forms.Padding(5);
+            this.MoviePosterPictureBox.Name = "MoviePosterPictureBox";
+            this.MoviePosterPictureBox.Size = new System.Drawing.Size(420, 635);
+            this.MoviePosterPictureBox.TabIndex = 1;
+            this.MoviePosterPictureBox.TabStop = false;
             // 
             // OrderForm
             // 
@@ -377,12 +377,12 @@
             this.Activated += new System.EventHandler(this.OrderForm_Activated);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MoviePosterPictureBox)).EndInit();
             this.MovieSelectGroupBox.ResumeLayout(false);
             this.MovieSelectGroupBox.PerformLayout();
             this.CostGroupBox.ResumeLayout(false);
             this.CostGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MoviePosterPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

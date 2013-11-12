@@ -124,6 +124,7 @@
     <Content Include="Resources\Company_Men.jpg" />
     <Content Include="Resources\death-race-2.jpg" />
     <Content Include="Resources\footloose.jpg" />
+    <None Include="Resources\gnomeo.jpg" />
     <Content Include="Resources\green_hornet.jpg" />
     <Content Include="Resources\i_am_number_four.jpg" />
     <Content Include="Resources\JustGoWithIt.jpg" />
