@@ -48,7 +48,7 @@ namespace KevinKanAssignment3MovieBonanza
         {//when the form is loaded or activated display thes messages
             Image newImage = (passData[2] != "") ? (Image)Properties.Resources.ResourceManager.GetObject(passData[2]) : (Image)Properties.Resources.ResourceManager.GetObject("noMovie");
             MoviePosterPictureBox.BackgroundImage = newImage;
-            movieMessage = "Your Account has been billed " + passData[3]+ passData[4]+Environment.NewLine + passData[0]+" will stream in about a minute.";
+            movieMessage = "Your Account has been billed " + passData[3]+ passData[4]+"."+Environment.NewLine + passData[0]+" will stream in about a minute.";
             MovieInfoTextBox.Text = movieMessage;
         }
     }
