@@ -118,65 +118,59 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AS5552_7686" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AS5552-7686.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AS7750G_9621" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AS7750G-9621.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FX6860_EF30P" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FX6860-EF30P.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="G71GX_RX05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\G71GX-RX05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="G73JH_BST7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\G73JH-BST7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="G74Sx_RH71" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\G74Sx-RH71.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="G770" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\G770.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HPE_h8_1010" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HPE h8-1010.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iMac" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iMac.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mac_Pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mac Pro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nx6125" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nx6125.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="P750_00Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P750-00Y.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="P7_1047" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\P7-1047.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="T61" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\T61.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TGM2111E" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TGM2111E.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TGM2141L" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TGM2141L.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TGM2171C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TGM2171C.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TGM2141L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TGM2141L.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AS5552_7686" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AS5552-7686.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HPE_h8_1010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HPE h8-1010.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mac_Pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mac Pro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="G73JH_BST7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G73JH-BST7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="G71GX_RX05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G71GX-RX05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="X73SV_XR1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\X73SV-XR1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="X770_01J" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\X770-01J.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="nx6125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nx6125.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="YinYangSymbol" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Yin Yang Symbol.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P750_00Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\P750-00Y.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TGM2111E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TGM2111E.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="G74Sx_RH71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G74Sx-RH71.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P7_1047" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\P7-1047.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="G770" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G770.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FX6860_EF30P" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FX6860-EF30P.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iMac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iMac.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_630" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\630.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,7 +178,19 @@
   <data name="_964SLCK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\964SLCK.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="X770_01J" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\X770-01J.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="T61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\T61.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_968SLCK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\968SLCK.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StartLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\computer-sales-image2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,13 +61,15 @@
             this.mousttypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.powerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.webcamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dollarcomputersDataSet1 = new DollarComputers.dollarcomputersDataSet1();
             this.productsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dollarcomputersDataSet1 = new DollarComputers.dollarcomputersDataSet1();
+            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productsTableAdapter1 = new DollarComputers.dollarcomputersDataSet1TableAdapters.productsTableAdapter();
+            this.HardwareSelectLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dollarcomputersDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dollarcomputersDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -109,7 +110,7 @@
             this.powerDataGridViewTextBoxColumn,
             this.webcamDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.productsBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 21);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 48);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
@@ -334,34 +335,47 @@
             this.webcamDataGridViewTextBoxColumn.Name = "webcamDataGridViewTextBoxColumn";
             this.webcamDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // dollarcomputersDataSet1
-            // 
-            this.dollarcomputersDataSet1.DataSetName = "dollarcomputersDataSet1";
-            this.dollarcomputersDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // productsBindingSource1
             // 
             this.productsBindingSource1.DataMember = "products";
             this.productsBindingSource1.DataSource = this.dollarcomputersDataSet1;
             // 
+            // dollarcomputersDataSet1
+            // 
+            this.dollarcomputersDataSet1.DataSetName = "dollarcomputersDataSet1";
+            this.dollarcomputersDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // productsTableAdapter1
             // 
             this.productsTableAdapter1.ClearBeforeFill = true;
+            // 
+            // HardwareSelectLabel
+            // 
+            this.HardwareSelectLabel.AutoSize = true;
+            this.HardwareSelectLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.HardwareSelectLabel.Location = new System.Drawing.Point(12, 13);
+            this.HardwareSelectLabel.Name = "HardwareSelectLabel";
+            this.HardwareSelectLabel.Size = new System.Drawing.Size(473, 32);
+            this.HardwareSelectLabel.TabIndex = 2;
+            this.HardwareSelectLabel.Text = "Please Choose a Modle From Below";
             // 
             // SelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(970, 536);
+            this.ControlBox = false;
+            this.Controls.Add(this.HardwareSelectLabel);
             this.Controls.Add(this.dataGridView1);
             this.Name = "SelectForm";
             this.Text = "SelectForm";
             this.Load += new System.EventHandler(this.SelectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dollarcomputersDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dollarcomputersDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -403,5 +417,6 @@
         private dollarcomputersDataSet1 dollarcomputersDataSet1;
         private System.Windows.Forms.BindingSource productsBindingSource1;
         private dollarcomputersDataSet1TableAdapters.productsTableAdapter productsTableAdapter1;
+        private System.Windows.Forms.Label HardwareSelectLabel;
     }
 }

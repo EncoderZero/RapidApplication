@@ -33,8 +33,8 @@
             this.ExitButton = new System.Windows.Forms.Button();
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.CompanyLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.WelcomeImagePictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.WelcomeImagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // NewOrderButton
@@ -85,15 +85,15 @@
             this.CompanyLabel.TabIndex = 4;
             this.CompanyLabel.Text = "Dollar Computers";
             // 
-            // pictureBox1
+            // WelcomeImagePictureBox
             // 
-            this.pictureBox1.BackgroundImage = global::DollarComputers.Properties.Resources.YinYangSymbol;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 186);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.WelcomeImagePictureBox.BackgroundImage = global::DollarComputers.Properties.Resources.StartLogo;
+            this.WelcomeImagePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.WelcomeImagePictureBox.Location = new System.Drawing.Point(12, 12);
+            this.WelcomeImagePictureBox.Name = "WelcomeImagePictureBox";
+            this.WelcomeImagePictureBox.Size = new System.Drawing.Size(197, 186);
+            this.WelcomeImagePictureBox.TabIndex = 5;
+            this.WelcomeImagePictureBox.TabStop = false;
             // 
             // StartForm
             // 
@@ -102,15 +102,16 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(456, 211);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.WelcomeImagePictureBox);
             this.Controls.Add(this.CompanyLabel);
             this.Controls.Add(this.WelcomeLabel);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.LoadOrderButton);
             this.Controls.Add(this.NewOrderButton);
             this.Name = "StartForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dollar Computers";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WelcomeImagePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,7 +124,7 @@
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Label CompanyLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox WelcomeImagePictureBox;
     }
 }
 

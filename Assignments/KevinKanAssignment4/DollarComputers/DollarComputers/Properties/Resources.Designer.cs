@@ -181,6 +181,16 @@ namespace DollarComputers.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon logoIcon {
+            get {
+                object obj = ResourceManager.GetObject("logoIcon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Mac_Pro {
@@ -216,6 +226,16 @@ namespace DollarComputers.Properties {
         internal static System.Drawing.Bitmap P750_00Y {
             get {
                 object obj = ResourceManager.GetObject("P750_00Y", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StartLogo {
+            get {
+                object obj = ResourceManager.GetObject("StartLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
