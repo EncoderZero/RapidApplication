@@ -93,9 +93,9 @@ namespace DollarComputers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AS5552_7686 {
+        internal static System.Drawing.Bitmap _AS5552_7686 {
             get {
-                object obj = ResourceManager.GetObject("AS5552_7686", resourceCulture);
+                object obj = ResourceManager.GetObject("_AS5552_7686", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace DollarComputers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AS7750G_9621 {
+        internal static System.Drawing.Bitmap _AS7750G_9621 {
             get {
-                object obj = ResourceManager.GetObject("AS7750G_9621", resourceCulture);
+                object obj = ResourceManager.GetObject("_AS7750G_9621", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace DollarComputers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FX6860_EF30P {
+        internal static System.Drawing.Bitmap _FX6860_EF30P {
             get {
-                object obj = ResourceManager.GetObject("FX6860_EF30P", resourceCulture);
+                object obj = ResourceManager.GetObject("_FX6860_EF30P", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace DollarComputers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap G71GX_RX05 {
+        internal static System.Drawing.Bitmap _G71GX_RX05 {
             get {
-                object obj = ResourceManager.GetObject("G71GX_RX05", resourceCulture);
+                object obj = ResourceManager.GetObject("_G71GX_RX05", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace DollarComputers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap G73JH_BST7 {
+        internal static System.Drawing.Bitmap _G73JH_BST7 {
             get {
-                object obj = ResourceManager.GetObject("G73JH_BST7", resourceCulture);
+                object obj = ResourceManager.GetObject("_G73JH_BST7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace DollarComputers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap G74Sx_RH71 {
+        internal static System.Drawing.Bitmap _G74Sx_RH71 {
             get {
-                object obj = ResourceManager.GetObject("G74Sx_RH71", resourceCulture);
+                object obj = ResourceManager.GetObject("_G74Sx_RH71", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace DollarComputers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap G770 {
+        internal static System.Drawing.Bitmap _G770 {
             get {
-                object obj = ResourceManager.GetObject("G770", resourceCulture);
+                object obj = ResourceManager.GetObject("_G770", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace DollarComputers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap HPE_h8_1010 {
+        internal static System.Drawing.Bitmap _HPE_h8_1010 {
             get {
-                object obj = ResourceManager.GetObject("HPE_h8_1010", resourceCulture);
+                object obj = ResourceManager.GetObject("_HPE_h8_1010", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,109 @@ namespace DollarComputers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap iMac {
+        internal static System.Drawing.Bitmap _iMac {
             get {
-                object obj = ResourceManager.GetObject("iMac", resourceCulture);
+                object obj = ResourceManager.GetObject("_iMac", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _Mac_Pro {
+            get {
+                object obj = ResourceManager.GetObject("_Mac_Pro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _nx6125 {
+            get {
+                object obj = ResourceManager.GetObject("_nx6125", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _P7_1047 {
+            get {
+                object obj = ResourceManager.GetObject("_P7_1047", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _P750_00Y {
+            get {
+                object obj = ResourceManager.GetObject("_P750_00Y", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _T61 {
+            get {
+                object obj = ResourceManager.GetObject("_T61", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _TGM2111E {
+            get {
+                object obj = ResourceManager.GetObject("_TGM2111E", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _TGM2141L {
+            get {
+                object obj = ResourceManager.GetObject("_TGM2141L", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _TGM2171C {
+            get {
+                object obj = ResourceManager.GetObject("_TGM2171C", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _X73SV_XR1 {
+            get {
+                object obj = ResourceManager.GetObject("_X73SV_XR1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _X770_01J {
+            get {
+                object obj = ResourceManager.GetObject("_X770_01J", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,109 +293,9 @@ namespace DollarComputers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mac_Pro {
-            get {
-                object obj = ResourceManager.GetObject("Mac_Pro", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap nx6125 {
-            get {
-                object obj = ResourceManager.GetObject("nx6125", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap P7_1047 {
-            get {
-                object obj = ResourceManager.GetObject("P7_1047", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap P750_00Y {
-            get {
-                object obj = ResourceManager.GetObject("P750_00Y", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap StartLogo {
             get {
                 object obj = ResourceManager.GetObject("StartLogo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap T61 {
-            get {
-                object obj = ResourceManager.GetObject("T61", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap TGM2111E {
-            get {
-                object obj = ResourceManager.GetObject("TGM2111E", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap TGM2141L {
-            get {
-                object obj = ResourceManager.GetObject("TGM2141L", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap TGM2171C {
-            get {
-                object obj = ResourceManager.GetObject("TGM2171C", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap X73SV_XR1 {
-            get {
-                object obj = ResourceManager.GetObject("X73SV_XR1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap X770_01J {
-            get {
-                object obj = ResourceManager.GetObject("X770_01J", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
