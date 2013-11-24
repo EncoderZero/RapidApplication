@@ -34,6 +34,7 @@
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.CompanyLabel = new System.Windows.Forms.Label();
             this.WelcomeImagePictureBox = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.WelcomeImagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +56,7 @@
             this.LoadOrderButton.TabIndex = 1;
             this.LoadOrderButton.Text = "&Load Order";
             this.LoadOrderButton.UseVisualStyleBackColor = true;
+            this.LoadOrderButton.Click += new System.EventHandler(this.LoadOrderButton_Click);
             // 
             // ExitButton
             // 
@@ -64,6 +66,7 @@
             this.ExitButton.TabIndex = 2;
             this.ExitButton.Text = "E&xit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // WelcomeLabel
             // 
@@ -95,6 +98,12 @@
             this.WelcomeImagePictureBox.TabIndex = 5;
             this.WelcomeImagePictureBox.TabStop = false;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = " Text files (*.txt)|*.txt|All files (*.*)|*.*\"";
+            this.openFileDialog1.Title = "Open Previous Order";
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -125,6 +134,7 @@
         private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Label CompanyLabel;
         private System.Windows.Forms.PictureBox WelcomeImagePictureBox;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

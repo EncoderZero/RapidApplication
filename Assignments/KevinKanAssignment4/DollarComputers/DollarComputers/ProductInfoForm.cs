@@ -16,6 +16,16 @@ namespace DollarComputers
 {
     public partial class ProductInfoForm : Form
     {
+        OrderForm orderForm = new OrderForm();
+        private Form previousForm;
+        //set previous form
+        public Form PreviousForm
+        {
+            set
+            {
+                previousForm = value;
+            }
+        }
         public ProductInfoForm()
         {
             InitializeComponent();
@@ -24,6 +34,24 @@ namespace DollarComputers
         private void ProductInfoForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            previousForm.Show();
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            orderForm.PreviousForm = this;
+            this.Hide();
+            orderForm.Show();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

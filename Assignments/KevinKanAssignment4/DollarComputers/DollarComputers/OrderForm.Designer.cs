@@ -40,6 +40,7 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TechnicalSpecGroupBox = new System.Windows.Forms.GroupBox();
             this.LCDTextBox = new System.Windows.Forms.TextBox();
             this.LCDLabel = new System.Windows.Forms.Label();
@@ -75,13 +76,12 @@
             this.ProductIdTextBox = new System.Windows.Forms.TextBox();
             this.ProductIdLabel = new System.Windows.Forms.Label();
             this.TaxLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TaxTextBox = new System.Windows.Forms.TextBox();
             this.TotalLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TotalTextBox = new System.Windows.Forms.TextBox();
             this.CancelButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
             this.FinishButton = new System.Windows.Forms.Button();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printForm1 = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -149,6 +149,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -163,6 +164,7 @@
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
             this.backToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.backToolStripMenuItem.Text = "&Back";
+            this.backToolStripMenuItem.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -171,6 +173,13 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.aboutToolStripMenuItem.Text = "&About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // TechnicalSpecGroupBox
             // 
@@ -532,14 +541,14 @@
             this.TaxLabel.TabIndex = 15;
             this.TaxLabel.Text = "Tax";
             // 
-            // textBox1
+            // TaxTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(579, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(326, 38);
-            this.textBox1.TabIndex = 16;
+            this.TaxTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaxTextBox.Location = new System.Drawing.Point(579, 90);
+            this.TaxTextBox.Name = "TaxTextBox";
+            this.TaxTextBox.ReadOnly = true;
+            this.TaxTextBox.Size = new System.Drawing.Size(326, 38);
+            this.TaxTextBox.TabIndex = 16;
             // 
             // TotalLabel
             // 
@@ -551,14 +560,14 @@
             this.TotalLabel.TabIndex = 17;
             this.TotalLabel.Text = "Total";
             // 
-            // textBox2
+            // TotalTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(579, 163);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(326, 38);
-            this.textBox2.TabIndex = 18;
+            this.TotalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalTextBox.Location = new System.Drawing.Point(579, 163);
+            this.TotalTextBox.Name = "TotalTextBox";
+            this.TotalTextBox.ReadOnly = true;
+            this.TotalTextBox.Size = new System.Drawing.Size(326, 38);
+            this.TotalTextBox.TabIndex = 18;
             // 
             // CancelButton
             // 
@@ -569,6 +578,7 @@
             this.CancelButton.TabIndex = 19;
             this.CancelButton.Text = "&Cancel Order";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // BackButton
             // 
@@ -579,6 +589,7 @@
             this.BackButton.TabIndex = 20;
             this.BackButton.Text = "&Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // FinishButton
             // 
@@ -589,13 +600,7 @@
             this.FinishButton.TabIndex = 21;
             this.FinishButton.Text = "Finish";
             this.FinishButton.UseVisualStyleBackColor = true;
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
-            this.aboutToolStripMenuItem.Text = "&About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            this.FinishButton.Click += new System.EventHandler(this.FinishButton_Click);
             // 
             // printForm1
             // 
@@ -615,9 +620,9 @@
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.TotalLabel);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TotalTextBox);
             this.Controls.Add(this.TaxLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TaxTextBox);
             this.Controls.Add(this.ConditionTextBox);
             this.Controls.Add(this.ProductIdLabel);
             this.Controls.Add(this.ConditionLabel);
@@ -634,6 +639,7 @@
             this.Name = "OrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderForm";
+            this.Activated += new System.EventHandler(this.OrderForm_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -693,9 +699,9 @@
         private System.Windows.Forms.TextBox ProductIdTextBox;
         private System.Windows.Forms.Label ProductIdLabel;
         private System.Windows.Forms.Label TaxLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TaxTextBox;
         private System.Windows.Forms.Label TotalLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TotalTextBox;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Button BackButton;

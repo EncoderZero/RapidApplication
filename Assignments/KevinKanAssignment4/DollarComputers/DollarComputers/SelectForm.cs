@@ -16,6 +16,15 @@ namespace DollarComputers
 {
     public partial class SelectForm : Form
     {
+        private Form nextForm;
+        //set next form
+        public Form NextForm
+        {
+            set
+            {
+                nextForm = value;
+            }
+        }
         public SelectForm()
         {
             InitializeComponent();
@@ -26,6 +35,18 @@ namespace DollarComputers
             // TODO: This line of code loads data into the 'dollarcomputersDataSet1.products' table. You can move, or remove it, as needed.
             this.productsTableAdapter1.Fill(this.dollarcomputersDataSet1.products);
 
+        }
+
+        private void SelectionDataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {//on click anywhere
+            DataGridViewRow row = this.SelectionDataGridView1.Rows[e.RowIndex];//get entire row selected
+            ModelChoosenTextBox.Text = row.Cells["costDataGridViewTextBoxColumn"].Value.ToString();
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            nextForm.Show();
         }
     }
 }

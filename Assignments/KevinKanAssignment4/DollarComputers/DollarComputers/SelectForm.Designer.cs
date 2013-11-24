@@ -122,11 +122,12 @@
             this.SelectionDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SelectionDataGridView1.Size = new System.Drawing.Size(946, 426);
             this.SelectionDataGridView1.TabIndex = 1;
+            this.SelectionDataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.SelectionDataGridView1_CellMouseClick);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
             this.productIDDataGridViewTextBoxColumn.DataPropertyName = "productID";
-            this.productIDDataGridViewTextBoxColumn.HeaderText = "productID";
+            this.productIDDataGridViewTextBoxColumn.HeaderText = "Product Id";
             this.productIDDataGridViewTextBoxColumn.Name = "productIDDataGridViewTextBoxColumn";
             this.productIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -392,6 +393,7 @@
             this.NextButton.TabIndex = 5;
             this.NextButton.Text = "&Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // CancelButton
             // 
@@ -431,6 +433,15 @@
         #endregion
 
         private System.Windows.Forms.DataGridView SelectionDataGridView1;
+        private System.Windows.Forms.BindingSource productsBindingSource;
+        private dollarcomputersDataSet1 dollarcomputersDataSet1;
+        private System.Windows.Forms.BindingSource productsBindingSource1;
+        private dollarcomputersDataSet1TableAdapters.productsTableAdapter productsTableAdapter1;
+        private System.Windows.Forms.Label HardwareSelectLabel;
+        private System.Windows.Forms.Label ChosenModelLabel;
+        private System.Windows.Forms.TextBox ModelChoosenTextBox;
+        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn costDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn manufacturerDataGridViewTextBoxColumn;
@@ -462,14 +473,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mousttypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn powerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn webcamDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource productsBindingSource;
-        private dollarcomputersDataSet1 dollarcomputersDataSet1;
-        private System.Windows.Forms.BindingSource productsBindingSource1;
-        private dollarcomputersDataSet1TableAdapters.productsTableAdapter productsTableAdapter1;
-        private System.Windows.Forms.Label HardwareSelectLabel;
-        private System.Windows.Forms.Label ChosenModelLabel;
-        private System.Windows.Forms.TextBox ModelChoosenTextBox;
-        private System.Windows.Forms.Button NextButton;
-        private System.Windows.Forms.Button CancelButton;
     }
 }
