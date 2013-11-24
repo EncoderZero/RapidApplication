@@ -639,7 +639,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "OrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OrderForm";
+            this.Text = "Order Your Computer";
             this.Activated += new System.EventHandler(this.OrderForm_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.OrderPictureBox)).EndInit();
             this.menuStrip1.ResumeLayout(false);

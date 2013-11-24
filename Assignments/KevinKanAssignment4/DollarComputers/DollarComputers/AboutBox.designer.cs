@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox1));
             this.labelProductName = new System.Windows.Forms.Label();
             this.labelVersion = new System.Windows.Forms.Label();
             this.labelCopyright = new System.Windows.Forms.Label();
@@ -89,7 +90,7 @@
             this.textBoxDescription.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBoxDescription.ForeColor = System.Drawing.Color.White;
             this.textBoxDescription.Location = new System.Drawing.Point(374, 143);
-            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBoxDescription.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxDescription.Multiline = true;
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.ReadOnly = true;
@@ -101,7 +102,7 @@
             this.LogoPictureBox.BackgroundImage = global::DollarComputers.Properties.Resources.YinYangSymbol;
             this.LogoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LogoPictureBox.Location = new System.Drawing.Point(21, 22);
-            this.LogoPictureBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.LogoPictureBox.Margin = new System.Windows.Forms.Padding(5);
             this.LogoPictureBox.Name = "LogoPictureBox";
             this.LogoPictureBox.Size = new System.Drawing.Size(343, 330);
             this.LogoPictureBox.TabIndex = 15;
@@ -131,10 +132,11 @@
             this.Controls.Add(this.labelVersion);
             this.Controls.Add(this.labelProductName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "AboutBox1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AboutBox";
+            this.Text = "About Dollar Computers";
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
