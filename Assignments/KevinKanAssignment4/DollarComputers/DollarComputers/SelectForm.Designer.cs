@@ -387,9 +387,9 @@
             // NextButton
             // 
             this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.Location = new System.Drawing.Point(837, 535);
+            this.NextButton.Location = new System.Drawing.Point(837, 530);
             this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(121, 35);
+            this.NextButton.Size = new System.Drawing.Size(121, 40);
             this.NextButton.TabIndex = 5;
             this.NextButton.Text = "&Next";
             this.NextButton.UseVisualStyleBackColor = true;
@@ -404,6 +404,7 @@
             this.CancelButton.TabIndex = 6;
             this.CancelButton.Text = "&Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // SelectForm
             // 
@@ -420,6 +421,7 @@
             this.Name = "SelectForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SelectForm";
+            this.Activated += new System.EventHandler(this.SelectForm_Activated);
             this.Load += new System.EventHandler(this.SelectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SelectionDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).EndInit();

@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderForm));
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.OrderPictureBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,7 +83,7 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.FinishButton = new System.Windows.Forms.Button();
             this.printForm1 = new Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderPictureBox)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.TechnicalSpecGroupBox.SuspendLayout();
             this.ProductInfoGroupBox.SuspendLayout();
@@ -108,13 +108,14 @@
             this.lineShape1.Y1 = 145;
             this.lineShape1.Y2 = 145;
             // 
-            // pictureBox1
+            // OrderPictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(3, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(273, 259);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.OrderPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.OrderPictureBox.Location = new System.Drawing.Point(3, 37);
+            this.OrderPictureBox.Name = "OrderPictureBox";
+            this.OrderPictureBox.Size = new System.Drawing.Size(273, 259);
+            this.OrderPictureBox.TabIndex = 0;
+            this.OrderPictureBox.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -631,7 +632,7 @@
             this.Controls.Add(this.CostTextBox);
             this.Controls.Add(this.ProductInfoGroupBox);
             this.Controls.Add(this.TechnicalSpecGroupBox);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.OrderPictureBox);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.shapeContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -640,7 +641,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderForm";
             this.Activated += new System.EventHandler(this.OrderForm_Activated);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderPictureBox)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.TechnicalSpecGroupBox.ResumeLayout(false);
@@ -654,7 +655,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox OrderPictureBox;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.MenuStrip menuStrip1;
