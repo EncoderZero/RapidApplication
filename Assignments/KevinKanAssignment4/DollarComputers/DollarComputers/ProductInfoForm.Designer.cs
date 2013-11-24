@@ -543,6 +543,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ProductInfoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dollar Computers Product Info";
             this.Load += new System.EventHandler(this.ProductInfoForm_Load);
             this.menuStrip1.ResumeLayout(false);

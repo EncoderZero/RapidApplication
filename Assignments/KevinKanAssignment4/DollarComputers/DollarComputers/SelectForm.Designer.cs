@@ -416,6 +416,7 @@
             this.Controls.Add(this.HardwareSelectLabel);
             this.Controls.Add(this.SelectionDataGridView1);
             this.Name = "SelectForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SelectForm";
             this.Load += new System.EventHandler(this.SelectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SelectionDataGridView1)).EndInit();
