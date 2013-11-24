@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/**Author Kevin Kan
+ * Version Nov 24 2013
+ * Program to simulate the purchase of a computer
+ * SelectForm, allows user to select computer from database 
+ * */
 namespace DollarComputers
 {
     public partial class SelectForm : Form

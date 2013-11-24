@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.SelectionDataGridView1 = new System.Windows.Forms.DataGridView();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,18 +66,22 @@
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productsTableAdapter1 = new DollarComputers.dollarcomputersDataSet1TableAdapters.productsTableAdapter();
             this.HardwareSelectLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.ChosenModelLabel = new System.Windows.Forms.Label();
+            this.ModelChoosenTextBox = new System.Windows.Forms.TextBox();
+            this.NextButton = new System.Windows.Forms.Button();
+            this.CancelButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.SelectionDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dollarcomputersDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // SelectionDataGridView1
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SelectionDataGridView1.AllowUserToOrderColumns = true;
+            this.SelectionDataGridView1.AutoGenerateColumns = false;
+            this.SelectionDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SelectionDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productIDDataGridViewTextBoxColumn,
             this.costDataGridViewTextBoxColumn,
             this.manufacturerDataGridViewTextBoxColumn,
@@ -109,14 +113,15 @@
             this.mousttypeDataGridViewTextBoxColumn,
             this.powerDataGridViewTextBoxColumn,
             this.webcamDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.productsBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 48);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(946, 426);
-            this.dataGridView1.TabIndex = 1;
+            this.SelectionDataGridView1.DataSource = this.productsBindingSource1;
+            this.SelectionDataGridView1.Location = new System.Drawing.Point(12, 48);
+            this.SelectionDataGridView1.MultiSelect = false;
+            this.SelectionDataGridView1.Name = "SelectionDataGridView1";
+            this.SelectionDataGridView1.ReadOnly = true;
+            this.SelectionDataGridView1.RowTemplate.Height = 24;
+            this.SelectionDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.SelectionDataGridView1.Size = new System.Drawing.Size(946, 426);
+            this.SelectionDataGridView1.TabIndex = 1;
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -357,20 +362,63 @@
             this.HardwareSelectLabel.Name = "HardwareSelectLabel";
             this.HardwareSelectLabel.Size = new System.Drawing.Size(473, 32);
             this.HardwareSelectLabel.TabIndex = 2;
-            this.HardwareSelectLabel.Text = "Please Choose a Modle From Below";
+            this.HardwareSelectLabel.Text = "Please Choose a Model From Below";
+            // 
+            // ChosenModelLabel
+            // 
+            this.ChosenModelLabel.AutoSize = true;
+            this.ChosenModelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.ChosenModelLabel.Location = new System.Drawing.Point(12, 495);
+            this.ChosenModelLabel.Name = "ChosenModelLabel";
+            this.ChosenModelLabel.Size = new System.Drawing.Size(214, 32);
+            this.ChosenModelLabel.TabIndex = 3;
+            this.ChosenModelLabel.Text = "Model Choosen";
+            // 
+            // ModelChoosenTextBox
+            // 
+            this.ModelChoosenTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ModelChoosenTextBox.Location = new System.Drawing.Point(233, 489);
+            this.ModelChoosenTextBox.Name = "ModelChoosenTextBox";
+            this.ModelChoosenTextBox.ReadOnly = true;
+            this.ModelChoosenTextBox.Size = new System.Drawing.Size(725, 38);
+            this.ModelChoosenTextBox.TabIndex = 4;
+            // 
+            // NextButton
+            // 
+            this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextButton.Location = new System.Drawing.Point(837, 535);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(121, 35);
+            this.NextButton.TabIndex = 5;
+            this.NextButton.Text = "&Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelButton.Location = new System.Drawing.Point(12, 530);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(117, 40);
+            this.CancelButton.TabIndex = 6;
+            this.CancelButton.Text = "&Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
             // 
             // SelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 536);
+            this.ClientSize = new System.Drawing.Size(970, 574);
             this.ControlBox = false;
+            this.Controls.Add(this.CancelButton);
+            this.Controls.Add(this.NextButton);
+            this.Controls.Add(this.ModelChoosenTextBox);
+            this.Controls.Add(this.ChosenModelLabel);
             this.Controls.Add(this.HardwareSelectLabel);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.SelectionDataGridView1);
             this.Name = "SelectForm";
             this.Text = "SelectForm";
             this.Load += new System.EventHandler(this.SelectForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SelectionDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dollarcomputersDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
@@ -381,7 +429,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView SelectionDataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn costDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn manufacturerDataGridViewTextBoxColumn;
@@ -418,5 +466,9 @@
         private System.Windows.Forms.BindingSource productsBindingSource1;
         private dollarcomputersDataSet1TableAdapters.productsTableAdapter productsTableAdapter1;
         private System.Windows.Forms.Label HardwareSelectLabel;
+        private System.Windows.Forms.Label ChosenModelLabel;
+        private System.Windows.Forms.TextBox ModelChoosenTextBox;
+        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button CancelButton;
     }
 }
